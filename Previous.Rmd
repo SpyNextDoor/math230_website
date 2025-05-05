@@ -48,6 +48,7 @@ In this exercise we were required to create art of our choice using R. This was 
 A big part of this course was to analyze data and make meaningful visualizations to tell the stories from the data. In this part I will walk you through an example
 of the visualizations we did.
 
+
 ```{r, echo=FALSE}
 ggplot(iris, aes(x = Sepal.Length, y = Petal.Length, fill = Species)) +
   ggdensity::geom_hdr() +
