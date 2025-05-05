@@ -1,0 +1,5 @@
+"0","ggplot(std.habits, aes(x = extracurricular_participation, y = exam_score, fill = extracurricular_participation)) +"
+"0","  geom_boxplot() +"
+"0","  labs(title = ""Exam Scores and Extracurricular Participation"", x = ""Extracurricular?"", y = ""Exam Score"") +"
+"0","  theme_minimal()"
+"0",""

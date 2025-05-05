@@ -1,0 +1,8 @@
+"0","ggplot(sample.std, aes(x = mental_heath_cat, y = exam_score)) +"
+"0","  geom_boxplot(fill = rasta.palette[c(5)]) +"
+"0","  labs(title = ""Exam Score by Mental Health across Exercise Frequency"","
+"0","       x = ""Mental Health (Binned)"","
+"0","       y = ""Exam Score"") +"
+"0","  scale_fill_manual(values = rasta.palette[c(4)]) +"
+"0","  theme_minimal()"
+"0",""

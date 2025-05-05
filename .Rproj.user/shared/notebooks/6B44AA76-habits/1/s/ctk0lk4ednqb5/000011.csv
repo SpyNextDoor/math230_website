@@ -1,0 +1,8 @@
+"0","# HISTOGRAM of MENTAL HEALTH "
+"0",""
+"0","ggplot(std.habits, aes(x = mental_health_rating)) +"
+"0","  geom_histogram(binwidth = 1, fill = ""steelblue"", color = ""black"") +"
+"0","  labs(title = ""Histogram of Mental Health"","
+"0","       x = ""Mental Health"","
+"0","       y = ""Count"") +"
+"0","  theme_minimal()"

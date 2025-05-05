@@ -1,0 +1,7 @@
+"0","p <- ggplot(std.habits, aes(x = study_hours_per_day, y = exam_score)) +"
+"0","  geom_point() +"
+"0","  geom_smooth(method = ""lm"") +"
+"0","  labs(title = ""Study Hours vs Exam Score"", x = ""Study Hours"", y = ""Exam Score"")"
+"0",""
+"0","ggplotly(p)"
+"2","[38;5;232m`geom_smooth()` using formula = 'y ~ x'[39m"

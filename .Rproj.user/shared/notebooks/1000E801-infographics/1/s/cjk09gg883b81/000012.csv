@@ -1,0 +1,6 @@
+"0","ggplot(std.habits, aes(x = study_hours_per_day, y = exam_score)) +"
+"0","  geom_point(alpha = 0.6) +"
+"0","  geom_smooth(method = ""lm"", color = ""blue"") +"
+"0","  labs(title = ""Study Hours vs Exam Score"", x = ""Study Hours per Day"", y = ""Exam Score"") +"
+"0","  theme_minimal()"
+"0",""

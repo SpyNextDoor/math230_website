@@ -1,0 +1,5 @@
+"0","ggplot(std.habits, aes(x = gender, y = exam_score, fill = gender)) +"
+"0","  geom_boxplot() +"
+"0","  labs(title = ""Exam Scores by Gender"", x = ""Gender"", y = ""Exam Score"") +"
+"0","  theme_minimal()"
+"0",""

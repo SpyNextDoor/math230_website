@@ -1,0 +1,6 @@
+"0","ggplot(std.habits, aes(x = exercise_frequency, y = exam_score)) +"
+"0","  geom_point(alpha = 0.4) +"
+"0","  geom_smooth(method = ""loess"", color = ""darkorange"") +"
+"0","  labs(title = ""Exercise Frequency vs Exam Score"", x = ""Exercise Frequency"", y = ""Exam Score"") +"
+"0","  theme_minimal()"
+"0",""

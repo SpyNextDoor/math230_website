@@ -1,0 +1,2233 @@
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge,chrome=1"/>
+  <meta name="generator" content="distill" />
+
+  <style type="text/css">
+  /* Hide doc at startup (prevent jankiness while JS renders/transforms) */
+  body {
+    visibility: hidden;
+  }
+  </style>
+
+ <!--radix_placeholder_import_source-->
+ <!--/radix_placeholder_import_source-->
+
+<style type="text/css">code{white-space: pre;}</style>
+<style type="text/css" data-origin="pandoc">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { display: inline-block; text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  { color: #00769e; background-color: #f1f3f5; }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span { color: #00769e; } /* Normal */
+code span.al { color: #ad0000; } /* Alert */
+code span.an { color: #5e5e5e; } /* Annotation */
+code span.at { color: #657422; } /* Attribute */
+code span.bn { color: #ad0000; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #00769e; } /* ControlFlow */
+code span.ch { color: #20794d; } /* Char */
+code span.cn { color: #8f5902; } /* Constant */
+code span.co { color: #5e5e5e; } /* Comment */
+code span.cv { color: #5e5e5e; font-style: italic; } /* CommentVar */
+code span.do { color: #5e5e5e; font-style: italic; } /* Documentation */
+code span.dt { color: #ad0000; } /* DataType */
+code span.dv { color: #ad0000; } /* DecVal */
+code span.er { color: #ad0000; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #ad0000; } /* Float */
+code span.fu { color: #4758ab; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #5e5e5e; } /* Information */
+code span.kw { color: #00769e; } /* Keyword */
+code span.op { color: #5e5e5e; } /* Operator */
+code span.ot { color: #00769e; } /* Other */
+code span.pp { color: #ad0000; } /* Preprocessor */
+code span.sc { color: #5e5e5e; } /* SpecialChar */
+code span.ss { color: #20794d; } /* SpecialString */
+code span.st { color: #20794d; } /* String */
+code span.va { color: #111111; } /* Variable */
+code span.vs { color: #20794d; } /* VerbatimString */
+code span.wa { color: #5e5e5e; font-style: italic; } /* Warning */
+</style>
+
+
+  <!--radix_placeholder_meta_tags-->
+  <title>My Website: Impacts of Student Habits on Performance</title>
+
+  <meta property="description" itemprop="description" content="In this section, I talk about how various habits like exercising, or phone use impact the perfomance of students."/>
+
+
+
+  <!--  https://developers.facebook.com/docs/sharing/webmasters#markup -->
+  <meta property="og:title" content="My Website: Impacts of Student Habits on Performance"/>
+  <meta property="og:type" content="article"/>
+  <meta property="og:description" content="In this section, I talk about how various habits like exercising, or phone use impact the perfomance of students."/>
+  <meta property="og:locale" content="en_US"/>
+  <meta property="og:site_name" content="My Website"/>
+
+  <!--  https://dev.twitter.com/cards/types/summary -->
+  <meta property="twitter:card" content="summary"/>
+  <meta property="twitter:title" content="My Website: Impacts of Student Habits on Performance"/>
+  <meta property="twitter:description" content="In this section, I talk about how various habits like exercising, or phone use impact the perfomance of students."/>
+
+  <!--/radix_placeholder_meta_tags-->
+  <!--radix_placeholder_rmarkdown_metadata-->
+
+  <script type="text/json" id="radix-rmarkdown-metadata">
+  {"type":"list","attributes":{"names":{"type":"character","attributes":{},"value":["title","description"]}},"value":[{"type":"character","attributes":{},"value":["Impacts of Student Habits on Performance"]},{"type":"character","attributes":{},"value":["In this section, I talk about how various habits like exercising, or phone use impact the perfomance of students.  "]}]}
+  </script>
+  <!--/radix_placeholder_rmarkdown_metadata-->
+  <!--radix_placeholder_navigation_in_header-->
+  <meta name="distill:offset" content=""/>
+
+  <script type="application/javascript">
+
+    window.headroom_prevent_pin = false;
+
+    window.document.addEventListener("DOMContentLoaded", function (event) {
+
+      // initialize headroom for banner
+      var header = $('header').get(0);
+      var headerHeight = header.offsetHeight;
+      var headroom = new Headroom(header, {
+        tolerance: 5,
+        onPin : function() {
+          if (window.headroom_prevent_pin) {
+            window.headroom_prevent_pin = false;
+            headroom.unpin();
+          }
+        }
+      });
+      headroom.init();
+      if(window.location.hash)
+        headroom.unpin();
+      $(header).addClass('headroom--transition');
+
+      // offset scroll location for banner on hash change
+      // (see: https://github.com/WickyNilliams/headroom.js/issues/38)
+      window.addEventListener("hashchange", function(event) {
+        window.scrollTo(0, window.pageYOffset - (headerHeight + 25));
+      });
+
+      // responsive menu
+      $('.distill-site-header').each(function(i, val) {
+        var topnav = $(this);
+        var toggle = topnav.find('.nav-toggle');
+        toggle.on('click', function() {
+          topnav.toggleClass('responsive');
+        });
+      });
+
+      // nav dropdowns
+      $('.nav-dropbtn').click(function(e) {
+        $(this).next('.nav-dropdown-content').toggleClass('nav-dropdown-active');
+        $(this).parent().siblings('.nav-dropdown')
+           .children('.nav-dropdown-content').removeClass('nav-dropdown-active');
+      });
+      $("body").click(function(e){
+        $('.nav-dropdown-content').removeClass('nav-dropdown-active');
+      });
+      $(".nav-dropdown").click(function(e){
+        e.stopPropagation();
+      });
+    });
+  </script>
+
+  <style type="text/css">
+
+  /* Theme (user-documented overrideables for nav appearance) */
+
+  .distill-site-nav {
+    color: rgba(255, 255, 255, 0.8);
+    background-color: #0F2E3D;
+    font-size: 15px;
+    font-weight: 300;
+  }
+
+  .distill-site-nav a {
+    color: inherit;
+    text-decoration: none;
+  }
+
+  .distill-site-nav a:hover {
+    color: white;
+  }
+
+  @media print {
+    .distill-site-nav {
+      display: none;
+    }
+  }
+
+  .distill-site-header {
+
+  }
+
+  .distill-site-footer {
+
+  }
+
+
+  /* Site Header */
+
+  .distill-site-header {
+    width: 100%;
+    box-sizing: border-box;
+    z-index: 3;
+  }
+
+  .distill-site-header .nav-left {
+    display: inline-block;
+    margin-left: 8px;
+  }
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header .nav-left {
+      margin-left: 0;
+    }
+  }
+
+
+  .distill-site-header .nav-right {
+    float: right;
+    margin-right: 8px;
+  }
+
+  .distill-site-header a,
+  .distill-site-header .title {
+    display: inline-block;
+    text-align: center;
+    padding: 14px 10px 14px 10px;
+  }
+
+  .distill-site-header .title {
+    font-size: 18px;
+    min-width: 150px;
+  }
+
+  .distill-site-header .logo {
+    padding: 0;
+  }
+
+  .distill-site-header .logo img {
+    display: none;
+    max-height: 20px;
+    width: auto;
+    margin-bottom: -4px;
+  }
+
+  .distill-site-header .nav-image img {
+    max-height: 18px;
+    width: auto;
+    display: inline-block;
+    margin-bottom: -3px;
+  }
+
+
+
+  @media screen and (min-width: 1000px) {
+    .distill-site-header .logo img {
+      display: inline-block;
+    }
+    .distill-site-header .nav-left {
+      margin-left: 20px;
+    }
+    .distill-site-header .nav-right {
+      margin-right: 20px;
+    }
+    .distill-site-header .title {
+      padding-left: 12px;
+    }
+  }
+
+
+  .distill-site-header .nav-toggle {
+    display: none;
+  }
+
+  .nav-dropdown {
+    display: inline-block;
+    position: relative;
+  }
+
+  .nav-dropdown .nav-dropbtn {
+    border: none;
+    outline: none;
+    color: rgba(255, 255, 255, 0.8);
+    padding: 16px 10px;
+    background-color: transparent;
+    font-family: inherit;
+    font-size: inherit;
+    font-weight: inherit;
+    margin: 0;
+    margin-top: 1px;
+    z-index: 2;
+  }
+
+  .nav-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 200px;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.1);
+    z-index: 1;
+    margin-top: 2px;
+    white-space: nowrap;
+    padding-top: 4px;
+    padding-bottom: 4px;
+  }
+
+  .nav-dropdown-content hr {
+    margin-top: 4px;
+    margin-bottom: 4px;
+    border: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-dropdown-active {
+    display: block;
+  }
+
+  .nav-dropdown-content a, .nav-dropdown-content .nav-dropdown-header {
+    color: black;
+    padding: 6px 24px;
+    text-decoration: none;
+    display: block;
+    text-align: left;
+  }
+
+  .nav-dropdown-content .nav-dropdown-header {
+    display: block;
+    padding: 5px 24px;
+    padding-bottom: 0;
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #999999;
+    white-space: nowrap;
+  }
+
+  .nav-dropdown:hover .nav-dropbtn {
+    color: white;
+  }
+
+  .nav-dropdown-content a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+  .nav-right .nav-dropdown-content {
+    margin-left: -45%;
+    right: 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header a, .distill-site-header .nav-dropdown  {display: none;}
+    .distill-site-header a.nav-toggle {
+      float: right;
+      display: block;
+    }
+    .distill-site-header .title {
+      margin-left: 0;
+    }
+    .distill-site-header .nav-right {
+      margin-right: 0;
+    }
+    .distill-site-header {
+      overflow: hidden;
+    }
+    .nav-right .nav-dropdown-content {
+      margin-left: 0;
+    }
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .distill-site-header.responsive {position: relative; min-height: 500px; }
+    .distill-site-header.responsive a.nav-toggle {
+      position: absolute;
+      right: 0;
+      top: 0;
+    }
+    .distill-site-header.responsive a,
+    .distill-site-header.responsive .nav-dropdown {
+      display: block;
+      text-align: left;
+    }
+    .distill-site-header.responsive .nav-left,
+    .distill-site-header.responsive .nav-right {
+      width: 100%;
+    }
+    .distill-site-header.responsive .nav-dropdown {float: none;}
+    .distill-site-header.responsive .nav-dropdown-content {position: relative;}
+    .distill-site-header.responsive .nav-dropdown .nav-dropbtn {
+      display: block;
+      width: 100%;
+      text-align: left;
+    }
+  }
+
+  /* Site Footer */
+
+  .distill-site-footer {
+    width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+    z-index: 3;
+    margin-top: 30px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    text-align: center;
+  }
+
+  /* Headroom */
+
+  d-title {
+    padding-top: 6rem;
+  }
+
+  @media print {
+    d-title {
+      padding-top: 4rem;
+    }
+  }
+
+  .headroom {
+    z-index: 1000;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+  }
+
+  .headroom--transition {
+    transition: all .4s ease-in-out;
+  }
+
+  .headroom--unpinned {
+    top: -100px;
+  }
+
+  .headroom--pinned {
+    top: 0;
+  }
+
+  /* adjust viewport for navbar height */
+  /* helps vertically center bootstrap (non-distill) content */
+  .min-vh-100 {
+    min-height: calc(100vh - 100px) !important;
+  }
+
+  </style>
+
+  <script src="site_libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+  <link href="site_libs/font-awesome-6.5.2/css/all.min.css" rel="stylesheet"/>
+  <link href="site_libs/font-awesome-6.5.2/css/v4-shims.min.css" rel="stylesheet"/>
+  <script src="site_libs/headroom-0.9.4/headroom.min.js"></script>
+  <script src="site_libs/autocomplete-0.37.1/autocomplete.min.js"></script>
+  <script src="site_libs/fuse-6.4.1/fuse.min.js"></script>
+
+  <script type="application/javascript">
+
+  function getMeta(metaName) {
+    var metas = document.getElementsByTagName('meta');
+    for (let i = 0; i < metas.length; i++) {
+      if (metas[i].getAttribute('name') === metaName) {
+        return metas[i].getAttribute('content');
+      }
+    }
+    return '';
+  }
+
+  function offsetURL(url) {
+    var offset = getMeta('distill:offset');
+    return offset ? offset + '/' + url : url;
+  }
+
+  function createFuseIndex() {
+
+    // create fuse index
+    var options = {
+      keys: [
+        { name: 'title', weight: 20 },
+        { name: 'categories', weight: 15 },
+        { name: 'description', weight: 10 },
+        { name: 'contents', weight: 5 },
+      ],
+      ignoreLocation: true,
+      threshold: 0
+    };
+    var fuse = new window.Fuse([], options);
+
+    // fetch the main search.json
+    return fetch(offsetURL('search.json'))
+      .then(function(response) {
+        if (response.status == 200) {
+          return response.json().then(function(json) {
+            // index main articles
+            json.articles.forEach(function(article) {
+              fuse.add(article);
+            });
+            // download collections and index their articles
+            return Promise.all(json.collections.map(function(collection) {
+              return fetch(offsetURL(collection)).then(function(response) {
+                if (response.status === 200) {
+                  return response.json().then(function(articles) {
+                    articles.forEach(function(article) {
+                      fuse.add(article);
+                    });
+                  })
+                } else {
+                  return Promise.reject(
+                    new Error('Unexpected status from search index request: ' +
+                              response.status)
+                  );
+                }
+              });
+            })).then(function() {
+              return fuse;
+            });
+          });
+
+        } else {
+          return Promise.reject(
+            new Error('Unexpected status from search index request: ' +
+                        response.status)
+          );
+        }
+      });
+  }
+
+  window.document.addEventListener("DOMContentLoaded", function (event) {
+
+    // get search element (bail if we don't have one)
+    var searchEl = window.document.getElementById('distill-search');
+    if (!searchEl)
+      return;
+
+    createFuseIndex()
+      .then(function(fuse) {
+
+        // make search box visible
+        searchEl.classList.remove('hidden');
+
+        // initialize autocomplete
+        var options = {
+          autoselect: true,
+          hint: false,
+          minLength: 2,
+        };
+        window.autocomplete(searchEl, options, [{
+          source: function(query, callback) {
+            const searchOptions = {
+              isCaseSensitive: false,
+              shouldSort: true,
+              minMatchCharLength: 2,
+              limit: 10,
+            };
+            var results = fuse.search(query, searchOptions);
+            callback(results
+              .map(function(result) { return result.item; })
+            );
+          },
+          templates: {
+            suggestion: function(suggestion) {
+              var img = suggestion.preview && Object.keys(suggestion.preview).length > 0
+                ? `<img src="${offsetURL(suggestion.preview)}"</img>`
+                : '';
+              var html = `
+                <div class="search-item">
+                  <h3>${suggestion.title}</h3>
+                  <div class="search-item-description">
+                    ${suggestion.description || ''}
+                  </div>
+                  <div class="search-item-preview">
+                    ${img}
+                  </div>
+                </div>
+              `;
+              return html;
+            }
+          }
+        }]).on('autocomplete:selected', function(event, suggestion) {
+          window.location.href = offsetURL(suggestion.path);
+        });
+        // remove inline display style on autocompleter (we want to
+        // manage responsive display via css)
+        $('.algolia-autocomplete').css("display", "");
+      })
+      .catch(function(error) {
+        console.log(error);
+      });
+
+  });
+
+  </script>
+
+  <style type="text/css">
+
+  .nav-search {
+    font-size: x-small;
+  }
+
+  /* Algolioa Autocomplete */
+
+  .algolia-autocomplete {
+    display: inline-block;
+    margin-left: 10px;
+    vertical-align: sub;
+    background-color: white;
+    color: black;
+    padding: 6px;
+    padding-top: 8px;
+    padding-bottom: 0;
+    border-radius: 6px;
+    border: 1px #0F2E3D solid;
+    width: 180px;
+  }
+
+
+  @media screen and (max-width: 768px) {
+    .distill-site-nav .algolia-autocomplete {
+      display: none;
+      visibility: hidden;
+    }
+    .distill-site-nav.responsive .algolia-autocomplete {
+      display: inline-block;
+      visibility: visible;
+    }
+    .distill-site-nav.responsive .algolia-autocomplete .aa-dropdown-menu {
+      margin-left: 0;
+      width: 400px;
+      max-height: 400px;
+    }
+  }
+
+  .algolia-autocomplete .aa-input, .algolia-autocomplete .aa-hint {
+    width: 90%;
+    outline: none;
+    border: none;
+  }
+
+  .algolia-autocomplete .aa-hint {
+    color: #999;
+  }
+  .algolia-autocomplete .aa-dropdown-menu {
+    width: 550px;
+    max-height: 70vh;
+    overflow-x: visible;
+    overflow-y: scroll;
+    padding: 5px;
+    margin-top: 3px;
+    margin-left: -150px;
+    background-color: #fff;
+    border-radius: 5px;
+    border: 1px solid #999;
+    border-top: none;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion {
+    cursor: pointer;
+    padding: 5px 4px;
+    border-bottom: 1px solid #eee;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion:last-of-type {
+    border-bottom: none;
+    margin-bottom: 2px;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item {
+    overflow: hidden;
+    font-size: 0.8em;
+    line-height: 1.4em;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item h3 {
+    font-size: 1rem;
+    margin-block-start: 0;
+    margin-block-end: 5px;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-description {
+    display: inline-block;
+    overflow: hidden;
+    height: 2.8em;
+    width: 80%;
+    margin-right: 4%;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview {
+    display: inline-block;
+    width: 15%;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img {
+    height: 3em;
+    width: auto;
+    display: none;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion .search-item-preview img[src] {
+    display: initial;
+  }
+
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion.aa-cursor {
+    background-color: #eee;
+  }
+  .algolia-autocomplete .aa-dropdown-menu .aa-suggestion em {
+    font-weight: bold;
+    font-style: normal;
+  }
+
+  </style>
+
+
+  <!--/radix_placeholder_navigation_in_header-->
+  <!--radix_placeholder_distill-->
+
+  <style type="text/css">
+
+  body {
+    background-color: white;
+  }
+
+  .pandoc-table {
+    width: 100%;
+  }
+
+  .pandoc-table>caption {
+    margin-bottom: 10px;
+  }
+
+  .pandoc-table th:not([align]) {
+    text-align: left;
+  }
+
+  .pagedtable-footer {
+    font-size: 15px;
+  }
+
+  d-byline .byline {
+    grid-template-columns: 2fr 2fr;
+  }
+
+  d-byline .byline h3 {
+    margin-block-start: 1.5em;
+  }
+
+  d-byline .byline .authors-affiliations h3 {
+    margin-block-start: 0.5em;
+  }
+
+  .authors-affiliations .orcid-id {
+    width: 16px;
+    height:16px;
+    margin-left: 4px;
+    margin-right: 4px;
+    vertical-align: middle;
+    padding-bottom: 2px;
+  }
+
+  d-title .dt-tags {
+    margin-top: 1em;
+    grid-column: text;
+  }
+
+  .dt-tags .dt-tag {
+    text-decoration: none;
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0em 0.4em;
+    margin-right: 0.5em;
+    margin-bottom: 0.4em;
+    font-size: 70%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  d-article table.gt_table td,
+  d-article table.gt_table th {
+    border-bottom: none;
+    font-size: 100%;
+  }
+
+  .html-widget {
+    margin-bottom: 2.0em;
+  }
+
+  .l-screen-inset {
+    padding-right: 16px;
+  }
+
+  .l-screen .caption {
+    margin-left: 10px;
+  }
+
+  .shaded {
+    background: rgb(247, 247, 247);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .html-widget {
+    margin-bottom: 0;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .shaded .shaded-content {
+    background: white;
+  }
+
+  .text-output {
+    margin-top: 0;
+    line-height: 1.5em;
+  }
+
+  .hidden {
+    display: none !important;
+  }
+
+  hr.section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    margin: 0px;
+  }
+
+
+  d-byline {
+    border-top: none;
+  }
+
+  d-article {
+    padding-top: 2.5rem;
+    padding-bottom: 30px;
+    border-top: none;
+  }
+
+  d-appendix {
+    padding-top: 30px;
+  }
+
+  d-article>p>img {
+    width: 100%;
+  }
+
+  d-article h2 {
+    margin: 1rem 0 1.5rem 0;
+  }
+
+  d-article h3 {
+    margin-top: 1.5rem;
+  }
+
+  d-article iframe {
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    margin-bottom: 2.0em;
+    width: 100%;
+  }
+
+  /* Tweak code blocks */
+
+  d-article div.sourceCode code,
+  d-article pre code {
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+  }
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: auto;
+  }
+
+  d-article div.sourceCode {
+    background-color: white;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 10px;
+    font-size: 12px;
+    border-left: 2px solid rgba(0,0,0,0.1);
+  }
+
+  d-article pre {
+    font-size: 12px;
+    color: black;
+    background: none;
+    margin-top: 0;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  d-article pre a {
+    border-bottom: none;
+  }
+
+  d-article pre a:hover {
+    border-bottom: none;
+    text-decoration: underline;
+  }
+
+  d-article details {
+    grid-column: text;
+    margin-bottom: 0.8em;
+  }
+
+  @media(min-width: 768px) {
+
+  d-article pre,
+  d-article div.sourceCode,
+  d-article div.sourceCode pre {
+    overflow: visible !important;
+  }
+
+  d-article div.sourceCode pre {
+    padding-left: 18px;
+    font-size: 14px;
+  }
+
+  /* tweak for Pandoc numbered line within distill */
+  d-article pre.numberSource code > span {
+      left: -2em;
+  }
+
+  d-article pre {
+    font-size: 14px;
+  }
+
+  }
+
+  figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  /* CSS for d-contents */
+
+  .d-contents {
+    grid-column: text;
+    color: rgba(0,0,0,0.8);
+    font-size: 0.9em;
+    padding-bottom: 1em;
+    margin-bottom: 1em;
+    padding-bottom: 0.5em;
+    margin-bottom: 1em;
+    padding-left: 0.25em;
+    justify-self: start;
+  }
+
+  @media(min-width: 1000px) {
+    .d-contents.d-contents-float {
+      height: 0;
+      grid-column-start: 1;
+      grid-column-end: 4;
+      justify-self: center;
+      padding-right: 3em;
+      padding-left: 2em;
+    }
+  }
+
+  .d-contents nav h3 {
+    font-size: 18px;
+    margin-top: 0;
+    margin-bottom: 1em;
+  }
+
+  .d-contents li {
+    list-style-type: none
+  }
+
+  .d-contents nav > ul {
+    padding-left: 0;
+  }
+
+  .d-contents ul {
+    padding-left: 1em
+  }
+
+  .d-contents nav ul li {
+    margin-top: 0.6em;
+    margin-bottom: 0.2em;
+  }
+
+  .d-contents nav a {
+    font-size: 13px;
+    border-bottom: none;
+    text-decoration: none
+    color: rgba(0, 0, 0, 0.8);
+  }
+
+  .d-contents nav a:hover {
+    text-decoration: underline solid rgba(0, 0, 0, 0.6)
+  }
+
+  .d-contents nav > ul > li > a {
+    font-weight: 600;
+  }
+
+  .d-contents nav > ul > li > ul {
+    font-weight: inherit;
+  }
+
+  .d-contents nav > ul > li > ul > li {
+    margin-top: 0.2em;
+  }
+
+
+  .d-contents nav ul {
+    margin-top: 0;
+    margin-bottom: 0.25em;
+  }
+
+  .d-article-with-toc h2:nth-child(2) {
+    margin-top: 0;
+  }
+
+
+  /* Figure */
+
+  .figure {
+    position: relative;
+    margin-bottom: 2.5em;
+    margin-top: 1.5em;
+  }
+
+  .figure .caption {
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 12px;
+    line-height: 1.5em;
+  }
+
+  .figure img.external {
+    background: white;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+    padding: 18px;
+    box-sizing: border-box;
+  }
+
+  .figure .caption a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  .figure .caption b,
+  .figure .caption strong, {
+    font-weight: 600;
+    color: rgba(0, 0, 0, 1.0);
+  }
+
+  /* Citations */
+
+  d-article .citation {
+    color: inherit;
+    cursor: inherit;
+  }
+
+  div.hanging-indent{
+    margin-left: 1em; text-indent: -1em;
+  }
+
+  /* Citation hover box */
+
+  .tippy-box[data-theme~=light-border] {
+    background-color: rgba(250, 250, 250, 0.95);
+  }
+
+  .tippy-content > p {
+    margin-bottom: 0;
+    padding: 2px;
+  }
+
+
+  /* Tweak 1000px media break to show more text */
+
+  @media(min-width: 1000px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 80px [middle-start] 50px [text-start kicker-end] 65px 65px 65px 65px 65px 65px 65px 65px [text-end gutter-start] 65px [middle-end] 65px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 16px;
+    }
+
+    .grid {
+      grid-column-gap: 16px;
+    }
+
+    d-article {
+      font-size: 1.06rem;
+      line-height: 1.7em;
+    }
+    figure .caption, .figure .caption, figure figcaption {
+      font-size: 13px;
+    }
+  }
+
+  @media(min-width: 1180px) {
+    .base-grid,
+    distill-header,
+    d-title,
+    d-abstract,
+    d-article,
+    d-appendix,
+    distill-appendix,
+    d-byline,
+    d-footnote-list,
+    d-citation-list,
+    distill-footer {
+      grid-template-columns: [screen-start] 1fr [page-start kicker-start] 60px [middle-start] 60px [text-start kicker-end] 60px 60px 60px 60px 60px 60px 60px 60px [text-end gutter-start] 60px [middle-end] 60px [page-end gutter-end] 1fr [screen-end];
+      grid-column-gap: 32px;
+    }
+
+    .grid {
+      grid-column-gap: 32px;
+    }
+  }
+
+
+  /* Get the citation styles for the appendix (not auto-injected on render since
+     we do our own rendering of the citation appendix) */
+
+  d-appendix .citation-appendix,
+  .d-appendix .citation-appendix {
+    font-size: 11px;
+    line-height: 15px;
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+    padding-left: 18px;
+    border: 1px solid rgba(0,0,0,0.1);
+    background: rgba(0, 0, 0, 0.02);
+    padding: 10px 18px;
+    border-radius: 3px;
+    color: rgba(150, 150, 150, 1);
+    overflow: hidden;
+    margin-top: -12px;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+  }
+
+  /* Include appendix styles here so they can be overridden */
+
+  d-appendix {
+    contain: layout style;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-top: 60px;
+    margin-bottom: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    color: rgba(0,0,0,0.5);
+    padding-top: 60px;
+    padding-bottom: 48px;
+  }
+
+  d-appendix h3 {
+    grid-column: page-start / text-start;
+    font-size: 15px;
+    font-weight: 500;
+    margin-top: 1em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.65);
+  }
+
+  d-appendix h3 + * {
+    margin-top: 1em;
+  }
+
+  d-appendix ol {
+    padding: 0 0 0 15px;
+  }
+
+  @media (min-width: 768px) {
+    d-appendix ol {
+      padding: 0 0 0 30px;
+      margin-left: -30px;
+    }
+  }
+
+  d-appendix li {
+    margin-bottom: 1em;
+  }
+
+  d-appendix a {
+    color: rgba(0, 0, 0, 0.6);
+  }
+
+  d-appendix > * {
+    grid-column: text;
+  }
+
+  d-appendix > d-footnote-list,
+  d-appendix > d-citation-list,
+  d-appendix > distill-appendix {
+    grid-column: screen;
+  }
+
+  /* Include footnote styles here so they can be overridden */
+
+  d-footnote-list {
+    contain: layout style;
+  }
+
+  d-footnote-list > * {
+    grid-column: text;
+  }
+
+  d-footnote-list a.footnote-backlink {
+    color: rgba(0,0,0,0.3);
+    padding-left: 0.5em;
+  }
+
+
+
+  /* Anchor.js */
+
+  .anchorjs-link {
+    /*transition: all .25s linear; */
+    text-decoration: none;
+    border-bottom: none;
+  }
+  *:hover > .anchorjs-link {
+    margin-left: -1.125em !important;
+    text-decoration: none;
+    border-bottom: none;
+  }
+
+  /* Social footer */
+
+  .social_footer {
+    margin-top: 30px;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.67);
+  }
+
+  .disqus-comments {
+    margin-right: 30px;
+  }
+
+  .disqus-comment-count {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+    cursor: pointer;
+  }
+
+  #disqus_thread {
+    margin-top: 30px;
+  }
+
+  .article-sharing a {
+    border-bottom: none;
+    margin-right: 8px;
+  }
+
+  .article-sharing a:hover {
+    border-bottom: none;
+  }
+
+  .sidebar-section.subscribe {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .subscribe p {
+    margin-bottom: 0.5em;
+  }
+
+
+  .article-footer .subscribe {
+    font-size: 15px;
+    margin-top: 45px;
+  }
+
+
+  .sidebar-section.custom {
+    font-size: 12px;
+    line-height: 1.6em;
+  }
+
+  .custom p {
+    margin-bottom: 0.5em;
+  }
+
+  /* Styles for listing layout (hide title) */
+  .layout-listing d-title, .layout-listing .d-title {
+    display: none;
+  }
+
+  /* Styles for posts lists (not auto-injected) */
+
+
+  .posts-with-sidebar {
+    padding-left: 45px;
+    padding-right: 45px;
+  }
+
+  .posts-list .description h2,
+  .posts-list .description p {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+  }
+
+  .posts-list .description h2 {
+    font-weight: 700;
+    border-bottom: none;
+    padding-bottom: 0;
+  }
+
+  .posts-list h2.post-tag {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    padding-bottom: 12px;
+  }
+  .posts-list {
+    margin-top: 60px;
+    margin-bottom: 24px;
+  }
+
+  .posts-list .post-preview {
+    text-decoration: none;
+    overflow: hidden;
+    display: block;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 24px 0;
+  }
+
+  .post-preview-last {
+    border-bottom: none !important;
+  }
+
+  .posts-list .posts-list-caption {
+    grid-column: screen;
+    font-weight: 400;
+  }
+
+  .posts-list .post-preview h2 {
+    margin: 0 0 6px 0;
+    line-height: 1.2em;
+    font-style: normal;
+    font-size: 24px;
+  }
+
+  .posts-list .post-preview p {
+    margin: 0 0 12px 0;
+    line-height: 1.4em;
+    font-size: 16px;
+  }
+
+  .posts-list .post-preview .thumbnail {
+    box-sizing: border-box;
+    margin-bottom: 24px;
+    position: relative;
+    max-width: 500px;
+  }
+  .posts-list .post-preview img {
+    width: 100%;
+    display: block;
+  }
+
+  .posts-list .metadata {
+    font-size: 12px;
+    line-height: 1.4em;
+    margin-bottom: 18px;
+  }
+
+  .posts-list .metadata > * {
+    display: inline-block;
+  }
+
+  .posts-list .metadata .publishedDate {
+    margin-right: 2em;
+  }
+
+  .posts-list .metadata .dt-authors {
+    display: block;
+    margin-top: 0.3em;
+    margin-right: 2em;
+  }
+
+  .posts-list .dt-tags {
+    display: block;
+    line-height: 1em;
+  }
+
+  .posts-list .dt-tags .dt-tag {
+    display: inline-block;
+    color: rgba(0,0,0,0.6);
+    padding: 0.3em 0.4em;
+    margin-right: 0.2em;
+    margin-bottom: 0.4em;
+    font-size: 60%;
+    border: 1px solid rgba(0,0,0,0.2);
+    border-radius: 3px;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+
+  .posts-list img {
+    opacity: 1;
+  }
+
+  .posts-list img[data-src] {
+    opacity: 0;
+  }
+
+  .posts-more {
+    clear: both;
+  }
+
+
+  .posts-sidebar {
+    font-size: 16px;
+  }
+
+  .posts-sidebar h3 {
+    font-size: 16px;
+    margin-top: 0;
+    margin-bottom: 0.5em;
+    font-weight: 400;
+    text-transform: uppercase;
+  }
+
+  .sidebar-section {
+    margin-bottom: 30px;
+  }
+
+  .categories ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .categories li {
+    color: rgba(0, 0, 0, 0.8);
+    margin-bottom: 0;
+  }
+
+  .categories li>a {
+    border-bottom: none;
+  }
+
+  .categories li>a:hover {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.4);
+  }
+
+  .categories .active {
+    font-weight: 600;
+  }
+
+  .categories .category-count {
+    color: rgba(0, 0, 0, 0.4);
+  }
+
+
+  @media(min-width: 768px) {
+    .posts-list .post-preview h2 {
+      font-size: 26px;
+    }
+    .posts-list .post-preview .thumbnail {
+      float: right;
+      width: 30%;
+      margin-bottom: 0;
+    }
+    .posts-list .post-preview .description {
+      float: left;
+      width: 45%;
+    }
+    .posts-list .post-preview .metadata {
+      float: left;
+      width: 20%;
+      margin-top: 8px;
+    }
+    .posts-list .post-preview p {
+      margin: 0 0 12px 0;
+      line-height: 1.5em;
+      font-size: 16px;
+    }
+    .posts-with-sidebar .posts-list {
+      float: left;
+      width: 75%;
+    }
+    .posts-with-sidebar .posts-sidebar {
+      float: right;
+      width: 20%;
+      margin-top: 60px;
+      padding-top: 24px;
+      padding-bottom: 24px;
+    }
+  }
+
+
+  /* Improve display for browsers without grid (IE/Edge <= 15) */
+
+  .downlevel {
+    line-height: 1.6em;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Fira Sans", "Droid Sans", "Helvetica Neue", Arial, sans-serif;
+    margin: 0;
+  }
+
+  .downlevel .d-title {
+    padding-top: 6rem;
+    padding-bottom: 1.5rem;
+  }
+
+  .downlevel .d-title h1 {
+    font-size: 50px;
+    font-weight: 700;
+    line-height: 1.1em;
+    margin: 0 0 0.5rem;
+  }
+
+  .downlevel .d-title p {
+    font-weight: 300;
+    font-size: 1.2rem;
+    line-height: 1.55em;
+    margin-top: 0;
+  }
+
+  .downlevel .d-byline {
+    padding-top: 0.8em;
+    padding-bottom: 0.8em;
+    font-size: 0.8rem;
+    line-height: 1.8em;
+  }
+
+  .downlevel .section-separator {
+    border: none;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .downlevel .d-article {
+    font-size: 1.06rem;
+    line-height: 1.7em;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+
+  .downlevel .d-appendix {
+    padding-left: 0;
+    padding-right: 0;
+    max-width: none;
+    font-size: 0.8em;
+    line-height: 1.7em;
+    margin-bottom: 0;
+    color: rgba(0,0,0,0.5);
+    padding-top: 40px;
+    padding-bottom: 48px;
+  }
+
+  .downlevel .footnotes ol {
+    padding-left: 13px;
+  }
+
+  .downlevel .base-grid,
+  .downlevel .distill-header,
+  .downlevel .d-title,
+  .downlevel .d-abstract,
+  .downlevel .d-article,
+  .downlevel .d-appendix,
+  .downlevel .distill-appendix,
+  .downlevel .d-byline,
+  .downlevel .d-footnote-list,
+  .downlevel .d-citation-list,
+  .downlevel .distill-footer,
+  .downlevel .appendix-bottom,
+  .downlevel .posts-container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media(min-width: 768px) {
+    .downlevel .base-grid,
+    .downlevel .distill-header,
+    .downlevel .d-title,
+    .downlevel .d-abstract,
+    .downlevel .d-article,
+    .downlevel .d-appendix,
+    .downlevel .distill-appendix,
+    .downlevel .d-byline,
+    .downlevel .d-footnote-list,
+    .downlevel .d-citation-list,
+    .downlevel .distill-footer,
+    .downlevel .appendix-bottom,
+    .downlevel .posts-container {
+    padding-left: 150px;
+    padding-right: 150px;
+    max-width: 900px;
+  }
+  }
+
+  .downlevel pre code {
+    display: block;
+    border-left: 2px solid rgba(0, 0, 0, .1);
+    padding: 0 0 0 20px;
+    font-size: 14px;
+  }
+
+  .downlevel code, .downlevel pre {
+    color: black;
+    background: none;
+    font-family: Consolas, Monaco, 'Andale Mono', 'Ubuntu Mono', monospace;
+    text-align: left;
+    white-space: pre;
+    word-spacing: normal;
+    word-break: normal;
+    word-wrap: normal;
+    line-height: 1.5;
+
+    -moz-tab-size: 4;
+    -o-tab-size: 4;
+    tab-size: 4;
+
+    -webkit-hyphens: none;
+    -moz-hyphens: none;
+    -ms-hyphens: none;
+    hyphens: none;
+  }
+
+  .downlevel .posts-list .post-preview {
+    color: inherit;
+  }
+
+
+
+  </style>
+
+  <script type="application/javascript">
+
+  function is_downlevel_browser() {
+    if (bowser.isUnsupportedBrowser({ msie: "12", msedge: "16"},
+                                   window.navigator.userAgent)) {
+      return true;
+    } else {
+      return window.load_distill_framework === undefined;
+    }
+  }
+
+  // show body when load is complete
+  function on_load_complete() {
+
+    // add anchors
+    if (window.anchors) {
+      window.anchors.options.placement = 'left';
+      window.anchors.add('d-article > h2, d-article > h3, d-article > h4, d-article > h5');
+    }
+
+
+    // set body to visible
+    document.body.style.visibility = 'visible';
+
+    // force redraw for leaflet widgets
+    if (window.HTMLWidgets) {
+      var maps = window.HTMLWidgets.findAll(".leaflet");
+      $.each(maps, function(i, el) {
+        var map = this.getMap();
+        map.invalidateSize();
+        map.eachLayer(function(layer) {
+          if (layer instanceof L.TileLayer)
+            layer.redraw();
+        });
+      });
+    }
+
+    // trigger 'shown' so htmlwidgets resize
+    $('d-article').trigger('shown');
+  }
+
+  function init_distill() {
+
+    init_common();
+
+    // create front matter
+    var front_matter = $('<d-front-matter></d-front-matter>');
+    $('#distill-front-matter').wrap(front_matter);
+
+    // create d-title
+    $('.d-title').changeElementType('d-title');
+
+    // separator
+    var separator = '<hr class="section-separator" style="clear: both"/>';
+    // prepend separator above appendix
+    $('.d-byline').before(separator);
+    $('.d-article').before(separator);
+
+    // create d-byline
+    var byline = $('<d-byline></d-byline>');
+    $('.d-byline').replaceWith(byline);
+
+    // create d-article
+    var article = $('<d-article></d-article>');
+    $('.d-article').wrap(article).children().unwrap();
+
+    // move posts container into article
+    $('.posts-container').appendTo($('d-article'));
+
+    // create d-appendix
+    $('.d-appendix').changeElementType('d-appendix');
+
+    // flag indicating that we have appendix items
+    var appendix = $('.appendix-bottom').children('h3').length > 0;
+
+    // replace footnotes with <d-footnote>
+    $('.footnote-ref').each(function(i, val) {
+      appendix = true;
+      var href = $(this).attr('href');
+      var id = href.replace('#', '');
+      var fn = $('#' + id);
+      var fn_p = $('#' + id + '>p');
+      fn_p.find('.footnote-back').remove();
+      var text = fn_p.html();
+      var dtfn = $('<d-footnote></d-footnote>');
+      dtfn.html(text);
+      $(this).replaceWith(dtfn);
+    });
+    // remove footnotes
+    $('.footnotes').remove();
+
+    // move refs into #references-listing
+    $('#references-listing').replaceWith($('#refs'));
+
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      var id = $(this).attr('id');
+      $('.d-contents a[href="#' + id + '"]').parent().remove();
+      appendix = true;
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('d-appendix'));
+    });
+
+    // show d-appendix if we have appendix content
+    $("d-appendix").css('display', appendix ? 'grid' : 'none');
+
+    // localize layout chunks to just output
+    $('.layout-chunk').each(function(i, val) {
+
+      // capture layout
+      var layout = $(this).attr('data-layout');
+
+      // apply layout to markdown level block elements
+      var elements = $(this).children().not('details, div.sourceCode, pre, script');
+      elements.each(function(i, el) {
+        var layout_div = $('<div class="' + layout + '"></div>');
+        if (layout_div.hasClass('shaded')) {
+          var shaded_content = $('<div class="shaded-content"></div>');
+          $(this).wrap(shaded_content);
+          $(this).parent().wrap(layout_div);
+        } else {
+          $(this).wrap(layout_div);
+        }
+      });
+
+
+      // unwrap the layout-chunk div
+      $(this).children().unwrap();
+    });
+
+    // remove code block used to force  highlighting css
+    $('.distill-force-highlighting-css').parent().remove();
+
+    // remove empty line numbers inserted by pandoc when using a
+    // custom syntax highlighting theme, except when numbering line
+    // in code chunk
+    $('pre:not(.numberLines) code.sourceCode a:empty').remove();
+
+    // load distill framework
+    load_distill_framework();
+
+    // wait for window.distillRunlevel == 4 to do post processing
+    function distill_post_process() {
+
+      if (!window.distillRunlevel || window.distillRunlevel < 4)
+        return;
+
+      // hide author/affiliations entirely if we have no authors
+      var front_matter = JSON.parse($("#distill-front-matter").html());
+      var have_authors = front_matter.authors && front_matter.authors.length > 0;
+      if (!have_authors)
+        $('d-byline').addClass('hidden');
+
+      // article with toc class
+      $('.d-contents').parent().addClass('d-article-with-toc');
+
+      // strip links that point to #
+      $('.authors-affiliations').find('a[href="#"]').removeAttr('href');
+
+      // add orcid ids
+      $('.authors-affiliations').find('.author').each(function(i, el) {
+        var orcid_id = front_matter.authors[i].orcidID;
+        var author_name = front_matter.authors[i].author
+        if (orcid_id) {
+          var a = $('<a></a>');
+          a.attr('href', 'https://orcid.org/' + orcid_id);
+          var img = $('<img></img>');
+          img.addClass('orcid-id');
+          img.attr('alt', author_name ? 'ORCID ID for ' + author_name : 'ORCID ID');
+          img.attr('src','data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAA2ZpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wTU09Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9tbS8iIHhtbG5zOnN0UmVmPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvc1R5cGUvUmVzb3VyY2VSZWYjIiB4bWxuczp4bXA9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC8iIHhtcE1NOk9yaWdpbmFsRG9jdW1lbnRJRD0ieG1wLmRpZDo1N0NEMjA4MDI1MjA2ODExOTk0QzkzNTEzRjZEQTg1NyIgeG1wTU06RG9jdW1lbnRJRD0ieG1wLmRpZDozM0NDOEJGNEZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wTU06SW5zdGFuY2VJRD0ieG1wLmlpZDozM0NDOEJGM0ZGNTcxMUUxODdBOEVCODg2RjdCQ0QwOSIgeG1wOkNyZWF0b3JUb29sPSJBZG9iZSBQaG90b3Nob3AgQ1M1IE1hY2ludG9zaCI+IDx4bXBNTTpEZXJpdmVkRnJvbSBzdFJlZjppbnN0YW5jZUlEPSJ4bXAuaWlkOkZDN0YxMTc0MDcyMDY4MTE5NUZFRDc5MUM2MUUwNEREIiBzdFJlZjpkb2N1bWVudElEPSJ4bXAuZGlkOjU3Q0QyMDgwMjUyMDY4MTE5OTRDOTM1MTNGNkRBODU3Ii8+IDwvcmRmOkRlc2NyaXB0aW9uPiA8L3JkZjpSREY+IDwveDp4bXBtZXRhPiA8P3hwYWNrZXQgZW5kPSJyIj8+84NovQAAAR1JREFUeNpiZEADy85ZJgCpeCB2QJM6AMQLo4yOL0AWZETSqACk1gOxAQN+cAGIA4EGPQBxmJA0nwdpjjQ8xqArmczw5tMHXAaALDgP1QMxAGqzAAPxQACqh4ER6uf5MBlkm0X4EGayMfMw/Pr7Bd2gRBZogMFBrv01hisv5jLsv9nLAPIOMnjy8RDDyYctyAbFM2EJbRQw+aAWw/LzVgx7b+cwCHKqMhjJFCBLOzAR6+lXX84xnHjYyqAo5IUizkRCwIENQQckGSDGY4TVgAPEaraQr2a4/24bSuoExcJCfAEJihXkWDj3ZAKy9EJGaEo8T0QSxkjSwORsCAuDQCD+QILmD1A9kECEZgxDaEZhICIzGcIyEyOl2RkgwAAhkmC+eAm0TAAAAABJRU5ErkJggg==');
+          a.append(img);
+          $(this).append(a);
+        }
+      });
+
+      // hide elements of author/affiliations grid that have no value
+      function hide_byline_column(caption) {
+        $('d-byline').find('h3:contains("' + caption + '")').parent().css('visibility', 'hidden');
+      }
+
+      // affiliations
+      var have_affiliations = false;
+      for (var i = 0; i<front_matter.authors.length; ++i) {
+        var author = front_matter.authors[i];
+        if (author.affiliation !== "&nbsp;") {
+          have_affiliations = true;
+          break;
+        }
+      }
+      if (!have_affiliations)
+        $('d-byline').find('h3:contains("Affiliations")').css('visibility', 'hidden');
+
+      // published date
+      if (!front_matter.publishedDate)
+        hide_byline_column("Published");
+
+      // document object identifier
+      var doi = $('d-byline').find('h3:contains("DOI")');
+      var doi_p = doi.next().empty();
+      if (!front_matter.doi) {
+        // if we have a citation and valid citationText then link to that
+        if ($('#citation').length > 0 && front_matter.citationText) {
+          doi.html('Citation');
+          $('<a href="#citation"></a>')
+            .text(front_matter.citationText)
+            .appendTo(doi_p);
+        } else {
+          hide_byline_column("DOI");
+        }
+      } else {
+        $('<a></a>')
+           .attr('href', "https://doi.org/" + front_matter.doi)
+           .html(front_matter.doi)
+           .appendTo(doi_p);
+      }
+
+       // change plural form of authors/affiliations
+      if (front_matter.authors.length === 1) {
+        var grid = $('.authors-affiliations');
+        grid.children('h3:contains("Authors")').text('Author');
+        grid.children('h3:contains("Affiliations")').text('Affiliation');
+      }
+
+      // remove d-appendix and d-footnote-list local styles
+      $('d-appendix > style:first-child').remove();
+      $('d-footnote-list > style:first-child').remove();
+
+      // move appendix-bottom entries to the bottom
+      $('.appendix-bottom').appendTo('d-appendix').children().unwrap();
+      $('.appendix-bottom').remove();
+
+      // hoverable references
+      $('span.citation[data-cites]').each(function() {
+        const citeChild = $(this).children()[0]
+        // Do not process if @xyz has been used without escaping and without bibliography activated
+        // https://github.com/rstudio/distill/issues/466
+        if (citeChild === undefined) return true
+
+        if (citeChild.nodeName == "D-FOOTNOTE") {
+          var fn = citeChild
+          $(this).html(fn.shadowRoot.querySelector("sup"))
+          $(this).id = fn.id
+          fn.remove()
+        }
+        var refs = $(this).attr('data-cites').split(" ");
+        var refHtml = refs.map(function(ref) {
+          // Could use CSS.escape too here, we insure backward compatibility in navigator
+          return "<p>" + $('div[id="ref-' + ref + '"]').html() + "</p>";
+        }).join("\n");
+        window.tippy(this, {
+          allowHTML: true,
+          content: refHtml,
+          maxWidth: 500,
+          interactive: true,
+          interactiveBorder: 10,
+          theme: 'light-border',
+          placement: 'bottom-start'
+        });
+      });
+
+      // fix footnotes in tables (#411)
+      // replacing broken distill.pub feature
+      $('table d-footnote').each(function() {
+        // we replace internal showAtNode methode which is triggered when hovering a footnote
+        this.hoverBox.showAtNode = function(node) {
+          // ported from https://github.com/distillpub/template/pull/105/files
+          calcOffset = function(elem) {
+              let x = elem.offsetLeft;
+              let y = elem.offsetTop;
+              // Traverse upwards until an `absolute` element is found or `elem`
+              // becomes null.
+              while (elem = elem.offsetParent && elem.style.position != 'absolute') {
+                  x += elem.offsetLeft;
+                  y += elem.offsetTop;
+              }
+
+              return { left: x, top: y };
+          }
+          // https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/offsetTop
+          const bbox = node.getBoundingClientRect();
+          const offset = calcOffset(node);
+          this.show([offset.left + bbox.width, offset.top + bbox.height]);
+        }
+      })
+
+      // clear polling timer
+      clearInterval(tid);
+
+      // show body now that everything is ready
+      on_load_complete();
+    }
+
+    var tid = setInterval(distill_post_process, 50);
+    distill_post_process();
+
+  }
+
+  function init_downlevel() {
+
+    init_common();
+
+     // insert hr after d-title
+    $('.d-title').after($('<hr class="section-separator"/>'));
+
+    // check if we have authors
+    var front_matter = JSON.parse($("#distill-front-matter").html());
+    var have_authors = front_matter.authors && front_matter.authors.length > 0;
+
+    // manage byline/border
+    if (!have_authors)
+      $('.d-byline').remove();
+    $('.d-byline').after($('<hr class="section-separator"/>'));
+    $('.d-byline a').remove();
+
+    // remove toc
+    $('.d-contents').remove();
+
+    // move appendix elements
+    $('h1.appendix, h2.appendix').each(function(i, val) {
+      $(this).changeElementType('h3');
+    });
+    $('h3.appendix').each(function(i, val) {
+      $(this).nextUntil($('h1, h2, h3')).addBack().appendTo($('.d-appendix'));
+    });
+
+
+    // inject headers into references and footnotes
+    var refs_header = $('<h3></h3>');
+    refs_header.text('References');
+    $('#refs').prepend(refs_header);
+
+    var footnotes_header = $('<h3></h3');
+    footnotes_header.text('Footnotes');
+    $('.footnotes').children('hr').first().replaceWith(footnotes_header);
+
+    // move appendix-bottom entries to the bottom
+    $('.appendix-bottom').appendTo('.d-appendix').children().unwrap();
+    $('.appendix-bottom').remove();
+
+    // remove appendix if it's empty
+    if ($('.d-appendix').children().length === 0)
+      $('.d-appendix').remove();
+
+    // prepend separator above appendix
+    $('.d-appendix').before($('<hr class="section-separator" style="clear: both"/>'));
+
+    // trim code
+    $('pre>code').each(function(i, val) {
+      $(this).html($.trim($(this).html()));
+    });
+
+    // move posts-container right before article
+    $('.posts-container').insertBefore($('.d-article'));
+
+    $('body').addClass('downlevel');
+
+    on_load_complete();
+  }
+
+
+  function init_common() {
+
+    // jquery plugin to change element types
+    (function($) {
+      $.fn.changeElementType = function(newType) {
+        var attrs = {};
+
+        $.each(this[0].attributes, function(idx, attr) {
+          attrs[attr.nodeName] = attr.nodeValue;
+        });
+
+        this.replaceWith(function() {
+          return $("<" + newType + "/>", attrs).append($(this).contents());
+        });
+      };
+    })(jQuery);
+
+    // prevent underline for linked images
+    $('a > img').parent().css({'border-bottom' : 'none'});
+
+    // mark non-body figures created by knitr chunks as 100% width
+    $('.layout-chunk').each(function(i, val) {
+      var figures = $(this).find('img, .html-widget');
+      // ignore leaflet img layers (#106)
+      figures = figures.filter(':not(img[class*="leaflet"])')
+      if ($(this).attr('data-layout') !== "l-body") {
+        figures.css('width', '100%');
+      } else {
+        figures.css('max-width', '100%');
+        figures.filter("[width]").each(function(i, val) {
+          var fig = $(this);
+          fig.css('width', fig.attr('width') + 'px');
+        });
+
+      }
+    });
+
+    // auto-append index.html to post-preview links in file: protocol
+    // and in rstudio ide preview
+    $('.post-preview').each(function(i, val) {
+      if (window.location.protocol === "file:")
+        $(this).attr('href', $(this).attr('href') + "index.html");
+    });
+
+    // get rid of index.html references in header
+    if (window.location.protocol !== "file:") {
+      $('.distill-site-header a[href]').each(function(i,val) {
+        $(this).attr('href', $(this).attr('href').replace(/^index[.]html/, "./"));
+      });
+    }
+
+    // add class to pandoc style tables
+    $('tr.header').parent('thead').parent('table').addClass('pandoc-table');
+    $('.kable-table').children('table').addClass('pandoc-table');
+
+    // add figcaption style to table captions
+    $('caption').parent('table').addClass("figcaption");
+
+    // initialize posts list
+    if (window.init_posts_list)
+      window.init_posts_list();
+
+    // implmement disqus comment link
+    $('.disqus-comment-count').click(function() {
+      window.headroom_prevent_pin = true;
+      $('#disqus_thread').toggleClass('hidden');
+      if (!$('#disqus_thread').hasClass('hidden')) {
+        var offset = $(this).offset();
+        $(window).resize();
+        $('html, body').animate({
+          scrollTop: offset.top - 35
+        });
+      }
+    });
+  }
+
+  document.addEventListener('DOMContentLoaded', function() {
+    if (is_downlevel_browser())
+      init_downlevel();
+    else
+      window.addEventListener('WebComponentsReady', init_distill);
+  });
+
+  </script>
+
+  <!--/radix_placeholder_distill-->
+  <script src="site_libs/header-attrs-2.29/header-attrs.js"></script>
+  <link href="site_libs/htmltools-fill-0.5.8.1/fill.css" rel="stylesheet" />
+  <script src="site_libs/htmlwidgets-1.6.4/htmlwidgets.js"></script>
+  <script src="site_libs/plotly-binding-4.10.4/plotly.js"></script>
+  <script src="site_libs/typedarray-0.1/typedarray.min.js"></script>
+  <script src="site_libs/jquery-3.5.1/jquery.min.js"></script>
+  <link href="site_libs/crosstalk-1.2.1/css/crosstalk.min.css" rel="stylesheet" />
+  <script src="site_libs/crosstalk-1.2.1/js/crosstalk.min.js"></script>
+  <link href="site_libs/plotly-htmlwidgets-css-2.11.1/plotly-htmlwidgets.css" rel="stylesheet" />
+  <script src="site_libs/plotly-main-2.11.1/plotly-latest.min.js"></script>
+  <script src="site_libs/popper-2.6.0/popper.min.js"></script>
+  <link href="site_libs/tippy-6.2.7/tippy.css" rel="stylesheet" />
+  <link href="site_libs/tippy-6.2.7/tippy-light-border.css" rel="stylesheet" />
+  <script src="site_libs/tippy-6.2.7/tippy.umd.min.js"></script>
+  <script src="site_libs/anchor-4.2.2/anchor.min.js"></script>
+  <script src="site_libs/bowser-1.9.3/bowser.min.js"></script>
+  <script src="site_libs/webcomponents-2.0.0/webcomponents.js"></script>
+  <script src="site_libs/distill-2.2.21/template.v2.js"></script>
+  <!--radix_placeholder_site_in_header-->
+  <!--/radix_placeholder_site_in_header-->
+
+
+</head>
+
+<body>
+
+<!--radix_placeholder_front_matter-->
+
+<script id="distill-front-matter" type="text/json">
+{"title":"Impacts of Student Habits on Performance","description":"In this section, I talk about how various habits like exercising, or phone use impact the perfomance of students.","authors":[]}
+</script>
+
+<!--/radix_placeholder_front_matter-->
+<!--radix_placeholder_navigation_before_body-->
+<header class="header header--fixed" role="banner">
+<nav class="distill-site-nav distill-site-header">
+<div class="nav-left">
+<a href="index.html" class="title">My Website</a>
+<a href="index.html">Home</a>
+<a href="about.html">About</a>
+<a href="Previous.html">My Work</a>
+<a href="habits.html">Student Habits</a>
+</div>
+<div class="nav-right">
+<a href="javascript:void(0);" class="nav-toggle">&#9776;</a>
+</div>
+</nav>
+</header>
+<!--/radix_placeholder_navigation_before_body-->
+<!--radix_placeholder_site_before_body-->
+<!--/radix_placeholder_site_before_body-->
+
+<div class="d-title">
+<h1>Impacts of Student Habits on Performance</h1>
+
+<!--radix_placeholder_categories-->
+<!--/radix_placeholder_categories-->
+<p><p>In this section, I talk about how various habits like exercising, or phone use impact the perfomance of students.</p></p>
+</div>
+
+
+<div class="d-article">
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<p>Student’s success is not only determined by how rigorous the programs are. They are external factors that may contribute positively or negatively. In this investigation, I try to make connections to these external factors that I believe impact student success.</p>
+<p>I will use a random sample of 300 observation since the data set is huge.</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<h3 id="attendance">Attendance</h3>
+<p>If students do not attend class, there is a chance that some content will be hard for them to grasp. To look into attendance we have to also look into things that may affect it. An example is Netflix hours.</p>
+<div class="layout-chunk" data-layout="l-body">
+<div class="plotly html-widget html-fill-item" id="htmlwidget-0fb2919212532f39dc4e" style="width:624px;height:384px;"></div>
+<script type="application/json" data-for="htmlwidget-0fb2919212532f39dc4e">{"x":{"data":[{"x":[1.3999999999999999,2.2000000000000002,1,2,2.6000000000000001,2.2000000000000002,0,2.8999999999999999,0,2,1.7,1.7,1.6000000000000001,2,2.2999999999999998,0.5,1.3,2.8999999999999999,1.3999999999999999,1.8999999999999999,0.40000000000000002,2.2999999999999998,0.10000000000000001,0,2.7999999999999998,2.2000000000000002,2.6000000000000001,1.1000000000000001,1.5,0.90000000000000002,1.3999999999999999,1.3,1,1.2,1.7,0.29999999999999999,3.6000000000000001,1.2,0.29999999999999999,3.6000000000000001,4.2000000000000002,2.2999999999999998,2.6000000000000001,1.1000000000000001,2,1.2,2.7999999999999998,0,2.7000000000000002,0.69999999999999996,2.2999999999999998,1.5,3.6000000000000001,0.59999999999999998,2.2000000000000002,0.80000000000000004,3.1000000000000001,0.69999999999999996,1.3,2.7000000000000002,1.6000000000000001,2.7999999999999998,2.1000000000000001,0.5,2.2000000000000002,1.3999999999999999,4.2999999999999998,3.5,1.3,2.2999999999999998,0,3.5,2.7000000000000002,1.6000000000000001,2.7000000000000002,2.7000000000000002,0.90000000000000002,1.3999999999999999,3.6000000000000001,0.90000000000000002,1,2.2000000000000002,0.69999999999999996,2.3999999999999999,0,3.3999999999999999,0,3.2000000000000002,3.6000000000000001,0,3,1.2,3.7999999999999998,1.5,2.1000000000000001,1.5,0.69999999999999996,2.6000000000000001,0.5,1,2.3999999999999999,1.6000000000000001,0.10000000000000001,2.2000000000000002,3,1.3,1.6000000000000001,2.3999999999999999,1.7,2.3999999999999999,2.6000000000000001,2,2.8999999999999999,3.2000000000000002,1.8,1.7,3.3999999999999999,2.7000000000000002,0.90000000000000002,2.2000000000000002,0.29999999999999999,2,1.7,1.1000000000000001,3.2000000000000002,0.40000000000000002,1.3999999999999999,4.2000000000000002,2,0.59999999999999998,1,1.6000000000000001,0.90000000000000002,2.2999999999999998,1.1000000000000001,3.8999999999999999,1.3,2,0,1.6000000000000001,1.2,1.8999999999999999,3.2999999999999998,0.69999999999999996,1.3,0.5,2.8999999999999999,1.6000000000000001,0,3,1.5,0,3.2000000000000002,1,0.69999999999999996,0.5,2.2000000000000002,5.2999999999999998,0.69999999999999996,0,1.7,1,3.8999999999999999,4.4000000000000004,1.3999999999999999,3.8999999999999999,0.80000000000000004,1.1000000000000001,0.59999999999999998,1.3999999999999999,2,1.3,1.6000000000000001,1.7,0.20000000000000001,2,0.29999999999999999,2.7999999999999998,0.29999999999999999,2.7999999999999998,2.2999999999999998,0.5,3.6000000000000001,0.5,3.1000000000000001,3.1000000000000001,1.7,0,1.8999999999999999,3.2999999999999998,1.3999999999999999,3.2000000000000002,3.2999999999999998,1.2,2.2000000000000002,0.59999999999999998,0.10000000000000001,1.3999999999999999,2.1000000000000001,2.6000000000000001,0.29999999999999999,1.3,0.5,1.8999999999999999,0,2.5,2,2.2999999999999998,2.1000000000000001,1.7,2.5,1,2.3999999999999999,2.2999999999999998,1.5,3.7999999999999998,2.3999999999999999,3.5,2.6000000000000001,1.8999999999999999,2.2999999999999998,3.5,0.90000000000000002,1.8,2.6000000000000001,3.2000000000000002,2.3999999999999999,2.7000000000000002,1.8,5,3.2000000000000002,1.8,2.5,2.7000000000000002,2,0,3.6000000000000001,1.8,2.8999999999999999,3,2.2999999999999998,2.3999999999999999,1.1000000000000001,2.2999999999999998,1.8,3,1.6000000000000001,3.3999999999999999,2.8999999999999999,3.6000000000000001,1.3999999999999999,2.6000000000000001,0,0.20000000000000001,2.2000000000000002,2.1000000000000001,2.5,0.10000000000000001,1.8999999999999999,2,1.3999999999999999,2.2000000000000002,2,1.7,2.1000000000000001,2,0,0.20000000000000001,1.2,0,2,1.7,3.2000000000000002,1.8999999999999999,3,0.69999999999999996,0.5,2.7000000000000002,2.2999999999999998,1,0.69999999999999996,2.1000000000000001,0.80000000000000004,3.3999999999999999,2.1000000000000001,3,1.8999999999999999,2.5,0.69999999999999996,3.1000000000000001,2,0.40000000000000002,3,2.6000000000000001,0.40000000000000002,2.6000000000000001,2.5,2,2.6000000000000001,2.2999999999999998],"y":[85.799999999999997,95.299999999999997,81.700000000000003,98.799999999999997,66,91.5,86.900000000000006,88.299999999999997,83.299999999999997,88.900000000000006,99,100,85.799999999999997,83.200000000000003,90,81.599999999999994,61.899999999999999,100,81.599999999999994,88.700000000000003,89,71.299999999999997,76.200000000000003,83.299999999999997,83.299999999999997,74.400000000000006,100,88,83.200000000000003,81.799999999999997,76.599999999999994,89.5,83.900000000000006,85.799999999999997,92,72.700000000000003,81.700000000000003,59.899999999999999,100,80.599999999999994,100,61.200000000000003,86.799999999999997,85.400000000000006,77.5,95.299999999999997,100,69.799999999999997,78.5,87.099999999999994,79,79.099999999999994,81.099999999999994,93.5,72,98.599999999999994,94.799999999999997,74,91.400000000000006,70.900000000000006,71.700000000000003,78.400000000000006,63.799999999999997,100,89.5,81.200000000000003,100,73,80.700000000000003,77.900000000000006,70.299999999999997,95.5,87.5,93.599999999999994,92.299999999999997,81.700000000000003,75.700000000000003,92.200000000000003,82.700000000000003,82.700000000000003,84.900000000000006,87.900000000000006,95.099999999999994,91.299999999999997,66,100,83.900000000000006,97.400000000000006,82,90.099999999999994,98.599999999999994,78.599999999999994,90.200000000000003,84.700000000000003,76.400000000000006,80.5,100,86.599999999999994,67.599999999999994,90.799999999999997,84.799999999999997,95.200000000000003,81.5,89.799999999999997,100,94.700000000000003,82.400000000000006,75.200000000000003,95.200000000000003,80.900000000000006,86.400000000000006,72.700000000000003,88.900000000000006,83.099999999999994,83.400000000000006,91.700000000000003,71.400000000000006,90.599999999999994,74.900000000000006,94.099999999999994,78.299999999999997,81.700000000000003,71.099999999999994,72.400000000000006,83.200000000000003,89.200000000000003,97,86.400000000000006,78.099999999999994,99.5,97.5,72.299999999999997,100,86.5,92,73.099999999999994,94.799999999999997,83.599999999999994,91.099999999999994,100,71,75.200000000000003,76,97.5,92.5,81.900000000000006,85.099999999999994,84.599999999999994,76.799999999999997,87.700000000000003,91.700000000000003,77.599999999999994,78.599999999999994,70.099999999999994,91.599999999999994,84.799999999999997,65,79.799999999999997,82.599999999999994,89.599999999999994,72.200000000000003,69,100,81.5,82.799999999999997,68.099999999999994,100,99.5,73.099999999999994,95.900000000000006,85.299999999999997,89.799999999999997,87.299999999999997,90.099999999999994,82.400000000000006,64.099999999999994,100,74.200000000000003,84.599999999999994,93,83.099999999999994,100,88.099999999999994,82.900000000000006,82.799999999999997,76.799999999999997,77.400000000000006,98.799999999999997,100,92.700000000000003,89.099999999999994,88.700000000000003,93.099999999999994,94.599999999999994,91.400000000000006,77.700000000000003,68.799999999999997,76.900000000000006,84.400000000000006,73.900000000000006,89,87.700000000000003,82.900000000000006,86.200000000000003,94.099999999999994,84.599999999999994,85.799999999999997,86.700000000000003,93.299999999999997,78.400000000000006,96.700000000000003,71,92.200000000000003,76.5,86.5,95.599999999999994,86,100,91.900000000000006,75.200000000000003,94.5,84.299999999999997,92.099999999999994,72.299999999999997,96.200000000000003,65.299999999999997,79.400000000000006,89.299999999999997,86.099999999999994,100,95.400000000000006,81.400000000000006,90,83.200000000000003,85.299999999999997,92,97.299999999999997,56,99.400000000000006,93.299999999999997,89.099999999999994,74.5,88.400000000000006,90.099999999999994,64,83.200000000000003,76.599999999999994,75,72.299999999999997,66.299999999999997,91.099999999999994,76.5,72.700000000000003,94.400000000000006,56.700000000000003,85.299999999999997,88.599999999999994,100,84.5,89.599999999999994,84.400000000000006,74.299999999999997,84,85.200000000000003,94.299999999999997,80.900000000000006,81.5,97.599999999999994,64.299999999999997,82.900000000000006,91.900000000000006,90.200000000000003,93.599999999999994,72.799999999999997,89,88.599999999999994,87,73,86.200000000000003,76.099999999999994,87.400000000000006,84.299999999999997,92.5,84.799999999999997,96.299999999999997,71.200000000000003,96.900000000000006,74.700000000000003,75.200000000000003,70.299999999999997,100,80,86.200000000000003,64,79.599999999999994,86,71.700000000000003,86.799999999999997,100,77.299999999999997],"text":["netflix_hours: 1.4<br />attendance_percentage:  85.8","netflix_hours: 2.2<br />attendance_percentage:  95.3","netflix_hours: 1.0<br />attendance_percentage:  81.7","netflix_hours: 2.0<br />attendance_percentage:  98.8","netflix_hours: 2.6<br />attendance_percentage:  66.0","netflix_hours: 2.2<br />attendance_percentage:  91.5","netflix_hours: 0.0<br />attendance_percentage:  86.9","netflix_hours: 2.9<br />attendance_percentage:  88.3","netflix_hours: 0.0<br />attendance_percentage:  83.3","netflix_hours: 2.0<br />attendance_percentage:  88.9","netflix_hours: 1.7<br />attendance_percentage:  99.0","netflix_hours: 1.7<br />attendance_percentage: 100.0","netflix_hours: 1.6<br />attendance_percentage:  85.8","netflix_hours: 2.0<br />attendance_percentage:  83.2","netflix_hours: 2.3<br />attendance_percentage:  90.0","netflix_hours: 0.5<br />attendance_percentage:  81.6","netflix_hours: 1.3<br />attendance_percentage:  61.9","netflix_hours: 2.9<br />attendance_percentage: 100.0","netflix_hours: 1.4<br />attendance_percentage:  81.6","netflix_hours: 1.9<br />attendance_percentage:  88.7","netflix_hours: 0.4<br />attendance_percentage:  89.0","netflix_hours: 2.3<br />attendance_percentage:  71.3","netflix_hours: 0.1<br />attendance_percentage:  76.2","netflix_hours: 0.0<br />attendance_percentage:  83.3","netflix_hours: 2.8<br />attendance_percentage:  83.3","netflix_hours: 2.2<br />attendance_percentage:  74.4","netflix_hours: 2.6<br />attendance_percentage: 100.0","netflix_hours: 1.1<br />attendance_percentage:  88.0","netflix_hours: 1.5<br />attendance_percentage:  83.2","netflix_hours: 0.9<br />attendance_percentage:  81.8","netflix_hours: 1.4<br />attendance_percentage:  76.6","netflix_hours: 1.3<br />attendance_percentage:  89.5","netflix_hours: 1.0<br />attendance_percentage:  83.9","netflix_hours: 1.2<br />attendance_percentage:  85.8","netflix_hours: 1.7<br />attendance_percentage:  92.0","netflix_hours: 0.3<br />attendance_percentage:  72.7","netflix_hours: 3.6<br />attendance_percentage:  81.7","netflix_hours: 1.2<br />attendance_percentage:  59.9","netflix_hours: 0.3<br />attendance_percentage: 100.0","netflix_hours: 3.6<br />attendance_percentage:  80.6","netflix_hours: 4.2<br />attendance_percentage: 100.0","netflix_hours: 2.3<br />attendance_percentage:  61.2","netflix_hours: 2.6<br />attendance_percentage:  86.8","netflix_hours: 1.1<br />attendance_percentage:  85.4","netflix_hours: 2.0<br />attendance_percentage:  77.5","netflix_hours: 1.2<br />attendance_percentage:  95.3","netflix_hours: 2.8<br />attendance_percentage: 100.0","netflix_hours: 0.0<br />attendance_percentage:  69.8","netflix_hours: 2.7<br />attendance_percentage:  78.5","netflix_hours: 0.7<br />attendance_percentage:  87.1","netflix_hours: 2.3<br />attendance_percentage:  79.0","netflix_hours: 1.5<br />attendance_percentage:  79.1","netflix_hours: 3.6<br />attendance_percentage:  81.1","netflix_hours: 0.6<br />attendance_percentage:  93.5","netflix_hours: 2.2<br />attendance_percentage:  72.0","netflix_hours: 0.8<br />attendance_percentage:  98.6","netflix_hours: 3.1<br />attendance_percentage:  94.8","netflix_hours: 0.7<br />attendance_percentage:  74.0","netflix_hours: 1.3<br />attendance_percentage:  91.4","netflix_hours: 2.7<br />attendance_percentage:  70.9","netflix_hours: 1.6<br />attendance_percentage:  71.7","netflix_hours: 2.8<br />attendance_percentage:  78.4","netflix_hours: 2.1<br />attendance_percentage:  63.8","netflix_hours: 0.5<br />attendance_percentage: 100.0","netflix_hours: 2.2<br />attendance_percentage:  89.5","netflix_hours: 1.4<br />attendance_percentage:  81.2","netflix_hours: 4.3<br />attendance_percentage: 100.0","netflix_hours: 3.5<br />attendance_percentage:  73.0","netflix_hours: 1.3<br />attendance_percentage:  80.7","netflix_hours: 2.3<br />attendance_percentage:  77.9","netflix_hours: 0.0<br />attendance_percentage:  70.3","netflix_hours: 3.5<br />attendance_percentage:  95.5","netflix_hours: 2.7<br />attendance_percentage:  87.5","netflix_hours: 1.6<br />attendance_percentage:  93.6","netflix_hours: 2.7<br />attendance_percentage:  92.3","netflix_hours: 2.7<br />attendance_percentage:  81.7","netflix_hours: 0.9<br />attendance_percentage:  75.7","netflix_hours: 1.4<br />attendance_percentage:  92.2","netflix_hours: 3.6<br />attendance_percentage:  82.7","netflix_hours: 0.9<br />attendance_percentage:  82.7","netflix_hours: 1.0<br />attendance_percentage:  84.9","netflix_hours: 2.2<br />attendance_percentage:  87.9","netflix_hours: 0.7<br />attendance_percentage:  95.1","netflix_hours: 2.4<br />attendance_percentage:  91.3","netflix_hours: 0.0<br />attendance_percentage:  66.0","netflix_hours: 3.4<br />attendance_percentage: 100.0","netflix_hours: 0.0<br />attendance_percentage:  83.9","netflix_hours: 3.2<br />attendance_percentage:  97.4","netflix_hours: 3.6<br />attendance_percentage:  82.0","netflix_hours: 0.0<br />attendance_percentage:  90.1","netflix_hours: 3.0<br />attendance_percentage:  98.6","netflix_hours: 1.2<br />attendance_percentage:  78.6","netflix_hours: 3.8<br />attendance_percentage:  90.2","netflix_hours: 1.5<br />attendance_percentage:  84.7","netflix_hours: 2.1<br />attendance_percentage:  76.4","netflix_hours: 1.5<br />attendance_percentage:  80.5","netflix_hours: 0.7<br />attendance_percentage: 100.0","netflix_hours: 2.6<br />attendance_percentage:  86.6","netflix_hours: 0.5<br />attendance_percentage:  67.6","netflix_hours: 1.0<br />attendance_percentage:  90.8","netflix_hours: 2.4<br />attendance_percentage:  84.8","netflix_hours: 1.6<br />attendance_percentage:  95.2","netflix_hours: 0.1<br />attendance_percentage:  81.5","netflix_hours: 2.2<br />attendance_percentage:  89.8","netflix_hours: 3.0<br />attendance_percentage: 100.0","netflix_hours: 1.3<br />attendance_percentage:  94.7","netflix_hours: 1.6<br />attendance_percentage:  82.4","netflix_hours: 2.4<br />attendance_percentage:  75.2","netflix_hours: 1.7<br />attendance_percentage:  95.2","netflix_hours: 2.4<br />attendance_percentage:  80.9","netflix_hours: 2.6<br />attendance_percentage:  86.4","netflix_hours: 2.0<br />attendance_percentage:  72.7","netflix_hours: 2.9<br />attendance_percentage:  88.9","netflix_hours: 3.2<br />attendance_percentage:  83.1","netflix_hours: 1.8<br />attendance_percentage:  83.4","netflix_hours: 1.7<br />attendance_percentage:  91.7","netflix_hours: 3.4<br />attendance_percentage:  71.4","netflix_hours: 2.7<br />attendance_percentage:  90.6","netflix_hours: 0.9<br />attendance_percentage:  74.9","netflix_hours: 2.2<br />attendance_percentage:  94.1","netflix_hours: 0.3<br />attendance_percentage:  78.3","netflix_hours: 2.0<br />attendance_percentage:  81.7","netflix_hours: 1.7<br />attendance_percentage:  71.1","netflix_hours: 1.1<br />attendance_percentage:  72.4","netflix_hours: 3.2<br />attendance_percentage:  83.2","netflix_hours: 0.4<br />attendance_percentage:  89.2","netflix_hours: 1.4<br />attendance_percentage:  97.0","netflix_hours: 4.2<br />attendance_percentage:  86.4","netflix_hours: 2.0<br />attendance_percentage:  78.1","netflix_hours: 0.6<br />attendance_percentage:  99.5","netflix_hours: 1.0<br />attendance_percentage:  97.5","netflix_hours: 1.6<br />attendance_percentage:  72.3","netflix_hours: 0.9<br />attendance_percentage: 100.0","netflix_hours: 2.3<br />attendance_percentage:  86.5","netflix_hours: 1.1<br />attendance_percentage:  92.0","netflix_hours: 3.9<br />attendance_percentage:  73.1","netflix_hours: 1.3<br />attendance_percentage:  94.8","netflix_hours: 2.0<br />attendance_percentage:  83.6","netflix_hours: 0.0<br />attendance_percentage:  91.1","netflix_hours: 1.6<br />attendance_percentage: 100.0","netflix_hours: 1.2<br />attendance_percentage:  71.0","netflix_hours: 1.9<br />attendance_percentage:  75.2","netflix_hours: 3.3<br />attendance_percentage:  76.0","netflix_hours: 0.7<br />attendance_percentage:  97.5","netflix_hours: 1.3<br />attendance_percentage:  92.5","netflix_hours: 0.5<br />attendance_percentage:  81.9","netflix_hours: 2.9<br />attendance_percentage:  85.1","netflix_hours: 1.6<br />attendance_percentage:  84.6","netflix_hours: 0.0<br />attendance_percentage:  76.8","netflix_hours: 3.0<br />attendance_percentage:  87.7","netflix_hours: 1.5<br />attendance_percentage:  91.7","netflix_hours: 0.0<br />attendance_percentage:  77.6","netflix_hours: 3.2<br />attendance_percentage:  78.6","netflix_hours: 1.0<br />attendance_percentage:  70.1","netflix_hours: 0.7<br />attendance_percentage:  91.6","netflix_hours: 0.5<br />attendance_percentage:  84.8","netflix_hours: 2.2<br />attendance_percentage:  65.0","netflix_hours: 5.3<br />attendance_percentage:  79.8","netflix_hours: 0.7<br />attendance_percentage:  82.6","netflix_hours: 0.0<br />attendance_percentage:  89.6","netflix_hours: 1.7<br />attendance_percentage:  72.2","netflix_hours: 1.0<br />attendance_percentage:  69.0","netflix_hours: 3.9<br />attendance_percentage: 100.0","netflix_hours: 4.4<br />attendance_percentage:  81.5","netflix_hours: 1.4<br />attendance_percentage:  82.8","netflix_hours: 3.9<br />attendance_percentage:  68.1","netflix_hours: 0.8<br />attendance_percentage: 100.0","netflix_hours: 1.1<br />attendance_percentage:  99.5","netflix_hours: 0.6<br />attendance_percentage:  73.1","netflix_hours: 1.4<br />attendance_percentage:  95.9","netflix_hours: 2.0<br />attendance_percentage:  85.3","netflix_hours: 1.3<br />attendance_percentage:  89.8","netflix_hours: 1.6<br />attendance_percentage:  87.3","netflix_hours: 1.7<br />attendance_percentage:  90.1","netflix_hours: 0.2<br />attendance_percentage:  82.4","netflix_hours: 2.0<br />attendance_percentage:  64.1","netflix_hours: 0.3<br />attendance_percentage: 100.0","netflix_hours: 2.8<br />attendance_percentage:  74.2","netflix_hours: 0.3<br />attendance_percentage:  84.6","netflix_hours: 2.8<br />attendance_percentage:  93.0","netflix_hours: 2.3<br />attendance_percentage:  83.1","netflix_hours: 0.5<br />attendance_percentage: 100.0","netflix_hours: 3.6<br />attendance_percentage:  88.1","netflix_hours: 0.5<br />attendance_percentage:  82.9","netflix_hours: 3.1<br />attendance_percentage:  82.8","netflix_hours: 3.1<br />attendance_percentage:  76.8","netflix_hours: 1.7<br />attendance_percentage:  77.4","netflix_hours: 0.0<br />attendance_percentage:  98.8","netflix_hours: 1.9<br />attendance_percentage: 100.0","netflix_hours: 3.3<br />attendance_percentage:  92.7","netflix_hours: 1.4<br />attendance_percentage:  89.1","netflix_hours: 3.2<br />attendance_percentage:  88.7","netflix_hours: 3.3<br />attendance_percentage:  93.1","netflix_hours: 1.2<br />attendance_percentage:  94.6","netflix_hours: 2.2<br />attendance_percentage:  91.4","netflix_hours: 0.6<br />attendance_percentage:  77.7","netflix_hours: 0.1<br />attendance_percentage:  68.8","netflix_hours: 1.4<br />attendance_percentage:  76.9","netflix_hours: 2.1<br />attendance_percentage:  84.4","netflix_hours: 2.6<br />attendance_percentage:  73.9","netflix_hours: 0.3<br />attendance_percentage:  89.0","netflix_hours: 1.3<br />attendance_percentage:  87.7","netflix_hours: 0.5<br />attendance_percentage:  82.9","netflix_hours: 1.9<br />attendance_percentage:  86.2","netflix_hours: 0.0<br />attendance_percentage:  94.1","netflix_hours: 2.5<br />attendance_percentage:  84.6","netflix_hours: 2.0<br />attendance_percentage:  85.8","netflix_hours: 2.3<br />attendance_percentage:  86.7","netflix_hours: 2.1<br />attendance_percentage:  93.3","netflix_hours: 1.7<br />attendance_percentage:  78.4","netflix_hours: 2.5<br />attendance_percentage:  96.7","netflix_hours: 1.0<br />attendance_percentage:  71.0","netflix_hours: 2.4<br />attendance_percentage:  92.2","netflix_hours: 2.3<br />attendance_percentage:  76.5","netflix_hours: 1.5<br />attendance_percentage:  86.5","netflix_hours: 3.8<br />attendance_percentage:  95.6","netflix_hours: 2.4<br />attendance_percentage:  86.0","netflix_hours: 3.5<br />attendance_percentage: 100.0","netflix_hours: 2.6<br />attendance_percentage:  91.9","netflix_hours: 1.9<br />attendance_percentage:  75.2","netflix_hours: 2.3<br />attendance_percentage:  94.5","netflix_hours: 3.5<br />attendance_percentage:  84.3","netflix_hours: 0.9<br />attendance_percentage:  92.1","netflix_hours: 1.8<br />attendance_percentage:  72.3","netflix_hours: 2.6<br />attendance_percentage:  96.2","netflix_hours: 3.2<br />attendance_percentage:  65.3","netflix_hours: 2.4<br />attendance_percentage:  79.4","netflix_hours: 2.7<br />attendance_percentage:  89.3","netflix_hours: 1.8<br />attendance_percentage:  86.1","netflix_hours: 5.0<br />attendance_percentage: 100.0","netflix_hours: 3.2<br />attendance_percentage:  95.4","netflix_hours: 1.8<br />attendance_percentage:  81.4","netflix_hours: 2.5<br />attendance_percentage:  90.0","netflix_hours: 2.7<br />attendance_percentage:  83.2","netflix_hours: 2.0<br />attendance_percentage:  85.3","netflix_hours: 0.0<br />attendance_percentage:  92.0","netflix_hours: 3.6<br />attendance_percentage:  97.3","netflix_hours: 1.8<br />attendance_percentage:  56.0","netflix_hours: 2.9<br />attendance_percentage:  99.4","netflix_hours: 3.0<br />attendance_percentage:  93.3","netflix_hours: 2.3<br />attendance_percentage:  89.1","netflix_hours: 2.4<br />attendance_percentage:  74.5","netflix_hours: 1.1<br />attendance_percentage:  88.4","netflix_hours: 2.3<br />attendance_percentage:  90.1","netflix_hours: 1.8<br />attendance_percentage:  64.0","netflix_hours: 3.0<br />attendance_percentage:  83.2","netflix_hours: 1.6<br />attendance_percentage:  76.6","netflix_hours: 3.4<br />attendance_percentage:  75.0","netflix_hours: 2.9<br />attendance_percentage:  72.3","netflix_hours: 3.6<br />attendance_percentage:  66.3","netflix_hours: 1.4<br />attendance_percentage:  91.1","netflix_hours: 2.6<br />attendance_percentage:  76.5","netflix_hours: 0.0<br />attendance_percentage:  72.7","netflix_hours: 0.2<br />attendance_percentage:  94.4","netflix_hours: 2.2<br />attendance_percentage:  56.7","netflix_hours: 2.1<br />attendance_percentage:  85.3","netflix_hours: 2.5<br />attendance_percentage:  88.6","netflix_hours: 0.1<br />attendance_percentage: 100.0","netflix_hours: 1.9<br />attendance_percentage:  84.5","netflix_hours: 2.0<br />attendance_percentage:  89.6","netflix_hours: 1.4<br />attendance_percentage:  84.4","netflix_hours: 2.2<br />attendance_percentage:  74.3","netflix_hours: 2.0<br />attendance_percentage:  84.0","netflix_hours: 1.7<br />attendance_percentage:  85.2","netflix_hours: 2.1<br />attendance_percentage:  94.3","netflix_hours: 2.0<br />attendance_percentage:  80.9","netflix_hours: 0.0<br />attendance_percentage:  81.5","netflix_hours: 0.2<br />attendance_percentage:  97.6","netflix_hours: 1.2<br />attendance_percentage:  64.3","netflix_hours: 0.0<br />attendance_percentage:  82.9","netflix_hours: 2.0<br />attendance_percentage:  91.9","netflix_hours: 1.7<br />attendance_percentage:  90.2","netflix_hours: 3.2<br />attendance_percentage:  93.6","netflix_hours: 1.9<br />attendance_percentage:  72.8","netflix_hours: 3.0<br />attendance_percentage:  89.0","netflix_hours: 0.7<br />attendance_percentage:  88.6","netflix_hours: 0.5<br />attendance_percentage:  87.0","netflix_hours: 2.7<br />attendance_percentage:  73.0","netflix_hours: 2.3<br />attendance_percentage:  86.2","netflix_hours: 1.0<br />attendance_percentage:  76.1","netflix_hours: 0.7<br />attendance_percentage:  87.4","netflix_hours: 2.1<br />attendance_percentage:  84.3","netflix_hours: 0.8<br />attendance_percentage:  92.5","netflix_hours: 3.4<br />attendance_percentage:  84.8","netflix_hours: 2.1<br />attendance_percentage:  96.3","netflix_hours: 3.0<br />attendance_percentage:  71.2","netflix_hours: 1.9<br />attendance_percentage:  96.9","netflix_hours: 2.5<br />attendance_percentage:  74.7","netflix_hours: 0.7<br />attendance_percentage:  75.2","netflix_hours: 3.1<br />attendance_percentage:  70.3","netflix_hours: 2.0<br />attendance_percentage: 100.0","netflix_hours: 0.4<br />attendance_percentage:  80.0","netflix_hours: 3.0<br />attendance_percentage:  86.2","netflix_hours: 2.6<br />attendance_percentage:  64.0","netflix_hours: 0.4<br />attendance_percentage:  79.6","netflix_hours: 2.6<br />attendance_percentage:  86.0","netflix_hours: 2.5<br />attendance_percentage:  71.7","netflix_hours: 2.0<br />attendance_percentage:  86.8","netflix_hours: 2.6<br />attendance_percentage: 100.0","netflix_hours: 2.3<br />attendance_percentage:  77.3"],"type":"scatter","mode":"markers","marker":{"autocolorscale":false,"color":"rgba(0,153,255,1)","opacity":0.90000000000000002,"size":3.7795275590551185,"symbol":"circle","line":{"width":1.8897637795275593,"color":"rgba(0,153,255,1)"}},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0,0.067088607594936706,0.13417721518987341,0.20126582278481012,0.26835443037974682,0.33544303797468356,0.40253164556962023,0.46962025316455691,0.53670886075949364,0.60379746835443038,0.67088607594936711,0.73797468354430373,0.80506329113924047,0.8721518987341772,0.93924050632911382,1.0063291139240507,1.0734177215189873,1.1405063291139239,1.2075949367088608,1.2746835443037974,1.3417721518987342,1.4088607594936708,1.4759493670886075,1.5430379746835443,1.6101265822784809,1.6772151898734176,1.7443037974683544,1.811392405063291,1.8784810126582276,1.9455696202531645,2.0126582278481013,2.079746835443038,2.1468354430379746,2.2139240506329112,2.2810126582278478,2.3481012658227849,2.4151898734177215,2.4822784810126581,2.5493670886075948,2.6164556962025314,2.6835443037974684,2.7506329113924051,2.8177215189873417,2.8848101265822783,2.9518987341772149,3.0189873417721516,3.0860759493670886,3.1531645569620252,3.2202531645569619,3.2873417721518985,3.3544303797468351,3.4215189873417722,3.4886075949367088,3.5556962025316454,3.622784810126582,3.6898734177215187,3.7569620253164553,3.8240506329113924,3.891139240506329,3.9582278481012656,4.0253164556962027,4.0924050632911388,4.1594936708860759,4.2265822784810121,4.2936708860759492,4.3607594936708862,4.4278481012658224,4.4949367088607595,4.5620253164556956,4.6291139240506327,4.6962025316455698,4.763291139240506,4.830379746835443,4.8974683544303792,4.9645569620253163,5.0316455696202533,5.0987341772151895,5.1658227848101266,5.2329113924050628,5.2999999999999998],"y":[84.308469744148269,84.32188254103319,84.335295337918112,84.348708134803033,84.362120931687954,84.375533728572876,84.388946525457797,84.402359322342718,84.41577211922764,84.429184916112561,84.442597712997483,84.456010509882404,84.469423306767325,84.482836103652247,84.496248900537168,84.509661697422089,84.523074494307011,84.536487291191932,84.549900088076868,84.563312884961789,84.57672568184671,84.590138478731632,84.603551275616553,84.616964072501474,84.630376869386396,84.643789666271317,84.657202463156239,84.67061526004116,84.684028056926081,84.697440853811003,84.710853650695924,84.724266447580845,84.737679244465767,84.751092041350688,84.764504838235609,84.777917635120531,84.791330432005452,84.804743228890374,84.818156025775295,84.831568822660216,84.844981619545138,84.858394416430059,84.87180721331498,84.885220010199902,84.898632807084823,84.912045603969744,84.925458400854666,84.938871197739587,84.952283994624509,84.96569679150943,84.979109588394351,84.992522385279273,85.005935182164194,85.019347979049115,85.032760775934051,85.046173572818972,85.059586369703894,85.072999166588815,85.086411963473736,85.099824760358658,85.113237557243579,85.1266503541285,85.140063151013422,85.153475947898343,85.166888744783265,85.180301541668186,85.193714338553107,85.207127135438029,85.22053993232295,85.233952729207871,85.247365526092793,85.260778322977714,85.274191119862635,85.287603916747557,85.301016713632478,85.3144295105174,85.327842307402321,85.341255104287242,85.354667901172164,85.368080698057085],"text":["netflix_hours: 0.00000000<br />attendance_percentage: 84.30847","netflix_hours: 0.06708861<br />attendance_percentage: 84.32188","netflix_hours: 0.13417722<br />attendance_percentage: 84.33530","netflix_hours: 0.20126582<br />attendance_percentage: 84.34871","netflix_hours: 0.26835443<br />attendance_percentage: 84.36212","netflix_hours: 0.33544304<br />attendance_percentage: 84.37553","netflix_hours: 0.40253165<br />attendance_percentage: 84.38895","netflix_hours: 0.46962025<br />attendance_percentage: 84.40236","netflix_hours: 0.53670886<br />attendance_percentage: 84.41577","netflix_hours: 0.60379747<br />attendance_percentage: 84.42918","netflix_hours: 0.67088608<br />attendance_percentage: 84.44260","netflix_hours: 0.73797468<br />attendance_percentage: 84.45601","netflix_hours: 0.80506329<br />attendance_percentage: 84.46942","netflix_hours: 0.87215190<br />attendance_percentage: 84.48284","netflix_hours: 0.93924051<br />attendance_percentage: 84.49625","netflix_hours: 1.00632911<br />attendance_percentage: 84.50966","netflix_hours: 1.07341772<br />attendance_percentage: 84.52307","netflix_hours: 1.14050633<br />attendance_percentage: 84.53649","netflix_hours: 1.20759494<br />attendance_percentage: 84.54990","netflix_hours: 1.27468354<br />attendance_percentage: 84.56331","netflix_hours: 1.34177215<br />attendance_percentage: 84.57673","netflix_hours: 1.40886076<br />attendance_percentage: 84.59014","netflix_hours: 1.47594937<br />attendance_percentage: 84.60355","netflix_hours: 1.54303797<br />attendance_percentage: 84.61696","netflix_hours: 1.61012658<br />attendance_percentage: 84.63038","netflix_hours: 1.67721519<br />attendance_percentage: 84.64379","netflix_hours: 1.74430380<br />attendance_percentage: 84.65720","netflix_hours: 1.81139241<br />attendance_percentage: 84.67062","netflix_hours: 1.87848101<br />attendance_percentage: 84.68403","netflix_hours: 1.94556962<br />attendance_percentage: 84.69744","netflix_hours: 2.01265823<br />attendance_percentage: 84.71085","netflix_hours: 2.07974684<br />attendance_percentage: 84.72427","netflix_hours: 2.14683544<br />attendance_percentage: 84.73768","netflix_hours: 2.21392405<br />attendance_percentage: 84.75109","netflix_hours: 2.28101266<br />attendance_percentage: 84.76450","netflix_hours: 2.34810127<br />attendance_percentage: 84.77792","netflix_hours: 2.41518987<br />attendance_percentage: 84.79133","netflix_hours: 2.48227848<br />attendance_percentage: 84.80474","netflix_hours: 2.54936709<br />attendance_percentage: 84.81816","netflix_hours: 2.61645570<br />attendance_percentage: 84.83157","netflix_hours: 2.68354430<br />attendance_percentage: 84.84498","netflix_hours: 2.75063291<br />attendance_percentage: 84.85839","netflix_hours: 2.81772152<br />attendance_percentage: 84.87181","netflix_hours: 2.88481013<br />attendance_percentage: 84.88522","netflix_hours: 2.95189873<br />attendance_percentage: 84.89863","netflix_hours: 3.01898734<br />attendance_percentage: 84.91205","netflix_hours: 3.08607595<br />attendance_percentage: 84.92546","netflix_hours: 3.15316456<br />attendance_percentage: 84.93887","netflix_hours: 3.22025316<br />attendance_percentage: 84.95228","netflix_hours: 3.28734177<br />attendance_percentage: 84.96570","netflix_hours: 3.35443038<br />attendance_percentage: 84.97911","netflix_hours: 3.42151899<br />attendance_percentage: 84.99252","netflix_hours: 3.48860759<br />attendance_percentage: 85.00594","netflix_hours: 3.55569620<br />attendance_percentage: 85.01935","netflix_hours: 3.62278481<br />attendance_percentage: 85.03276","netflix_hours: 3.68987342<br />attendance_percentage: 85.04617","netflix_hours: 3.75696203<br />attendance_percentage: 85.05959","netflix_hours: 3.82405063<br />attendance_percentage: 85.07300","netflix_hours: 3.89113924<br />attendance_percentage: 85.08641","netflix_hours: 3.95822785<br />attendance_percentage: 85.09982","netflix_hours: 4.02531646<br />attendance_percentage: 85.11324","netflix_hours: 4.09240506<br />attendance_percentage: 85.12665","netflix_hours: 4.15949367<br />attendance_percentage: 85.14006","netflix_hours: 4.22658228<br />attendance_percentage: 85.15348","netflix_hours: 4.29367089<br />attendance_percentage: 85.16689","netflix_hours: 4.36075949<br />attendance_percentage: 85.18030","netflix_hours: 4.42784810<br />attendance_percentage: 85.19371","netflix_hours: 4.49493671<br />attendance_percentage: 85.20713","netflix_hours: 4.56202532<br />attendance_percentage: 85.22054","netflix_hours: 4.62911392<br />attendance_percentage: 85.23395","netflix_hours: 4.69620253<br />attendance_percentage: 85.24737","netflix_hours: 4.76329114<br />attendance_percentage: 85.26078","netflix_hours: 4.83037975<br />attendance_percentage: 85.27419","netflix_hours: 4.89746835<br />attendance_percentage: 85.28760","netflix_hours: 4.96455696<br />attendance_percentage: 85.30102","netflix_hours: 5.03164557<br />attendance_percentage: 85.31443","netflix_hours: 5.09873418<br />attendance_percentage: 85.32784","netflix_hours: 5.16582278<br />attendance_percentage: 85.34126","netflix_hours: 5.23291139<br />attendance_percentage: 85.35467","netflix_hours: 5.30000000<br />attendance_percentage: 85.36808"],"type":"scatter","mode":"lines","name":"fitted values","line":{"width":3.7795275590551185,"color":"rgba(139,0,0,1)","dash":"solid"},"hoveron":"points","showlegend":false,"xaxis":"x","yaxis":"y","hoverinfo":"text","frame":null},{"x":[0,0.067088607594936706,0.13417721518987341,0.20126582278481012,0.26835443037974682,0.33544303797468356,0.40253164556962023,0.46962025316455691,0.53670886075949364,0.60379746835443038,0.67088607594936711,0.73797468354430373,0.80506329113924047,0.8721518987341772,0.93924050632911382,1.0063291139240507,1.0734177215189873,1.1405063291139239,1.2075949367088608,1.2746835443037974,1.3417721518987342,1.4088607594936708,1.4759493670886075,1.5430379746835443,1.6101265822784809,1.6772151898734176,1.7443037974683544,1.811392405063291,1.8784810126582276,1.9455696202531645,2.0126582278481013,2.079746835443038,2.1468354430379746,2.2139240506329112,2.2810126582278478,2.3481012658227849,2.4151898734177215,2.4822784810126581,2.5493670886075948,2.6164556962025314,2.6835443037974684,2.7506329113924051,2.8177215189873417,2.8848101265822783,2.9518987341772149,3.0189873417721516,3.0860759493670886,3.1531645569620252,3.2202531645569619,3.2873417721518985,3.3544303797468351,3.4215189873417722,3.4886075949367088,3.5556962025316454,3.622784810126582,3.6898734177215187,3.7569620253164553,3.8240506329113924,3.891139240506329,3.9582278481012656,4.0253164556962027,4.0924050632911388,4.1594936708860759,4.2265822784810121,4.2936708860759492,4.3607594936708862,4.4278481012658224,4.4949367088607595,4.5620253164556956,4.6291139240506327,4.6962025316455698,4.763291139240506,4.830379746835443,4.8974683544303792,4.9645569620253163,5.0316455696202533,5.0987341772151895,5.1658227848101266,5.2329113924050628,5.2999999999999998,5.2999999999999998,5.2999999999999998,5.2329113924050628,5.1658227848101266,5.0987341772151895,5.0316455696202533,4.9645569620253163,4.8974683544303792,4.830379746835443,4.763291139240506,4.6962025316455698,4.6291139240506327,4.5620253164556956,4.4949367088607595,4.4278481012658224,4.3607594936708862,4.2936708860759492,4.2265822784810121,4.1594936708860759,4.0924050632911388,4.0253164556962027,3.9582278481012656,3.891139240506329,3.8240506329113924,3.7569620253164553,3.6898734177215187,3.622784810126582,3.5556962025316454,3.4886075949367088,3.4215189873417722,3.3544303797468351,3.2873417721518985,3.2202531645569619,3.1531645569620252,3.0860759493670886,3.0189873417721516,2.9518987341772149,2.8848101265822783,2.8177215189873417,2.7506329113924051,2.6835443037974684,2.6164556962025314,2.5493670886075948,2.4822784810126581,2.4151898734177215,2.3481012658227849,2.2810126582278478,2.2139240506329112,2.1468354430379746,2.079746835443038,2.0126582278481013,1.9455696202531645,1.8784810126582276,1.811392405063291,1.7443037974683544,1.6772151898734176,1.6101265822784809,1.5430379746835443,1.4759493670886075,1.4088607594936708,1.3417721518987342,1.2746835443037974,1.2075949367088608,1.1405063291139239,1.0734177215189873,1.0063291139240507,0.93924050632911382,0.8721518987341772,0.80506329113924047,0.73797468354430373,0.67088607594936711,0.60379746835443038,0.53670886075949364,0.46962025316455691,0.40253164556962023,0.33544303797468356,0.26835443037974682,0.20126582278481012,0.13417721518987341,0.067088607594936706,0,0],"y":[82.088496650365428,82.161450986718094,82.233810767343655,82.305524531803457,82.376535374102559,82.446780319466683,82.51618963907147,82.584686102647368,82.652184172055854,82.718589143598464,82.783796253449594,82.847689769739148,82.910142107023887,82.971013014698613,83.030148910620071,83.087382454692957,83.142532483398611,83.195404452889449,83.24579156106789,83.293476731370617,83.338235633667665,83.379840879943842,83.418067453902381,83.452699308290931,83.483536895135401,83.510405200337786,83.533161670115149,83.551703289891989,83.565972054219884,83.575958179333483,83.581700654490021,83.583285061120094,83.580838937690174,83.574525255216983,83.564534736605168,83.551077782856765,83.53437667902972,83.51465858559807,83.492149625972075,83.467070199172028,83.439631502882079,83.410033155200608,83.37846175047757,83.34509016650307,83.310077445998587,83.27356909490787,83.235697665726462,83.19658352088021,83.156335695921939,83.115052803593073,83.072823937152435,83.029729544969243,82.985842258673927,82.941227664721723,82.895945014613829,82.850047872738372,82.803584703258565,82.756599399023784,82.709131756374006,82.661217900144692,82.612890663306928,82.564179925601309,82.515112915322149,82.465714478132739,82.416007316480844,82.366012202861086,82.31574816985183,82.265232679551403,82.214481774754219,82.163510213947873,82.112331591975263,82.060958447993769,82.009402362172821,81.957674042402616,81.905783402136251,81.853739630355648,81.801551254534459,81.749226197368543,81.696771827954024,81.644195008013469,81.644195008013469,89.091966388100701,89.012563974390304,88.933284011205942,88.854133360270183,88.775119390679151,88.696250025128705,88.617533791092498,88.53897987755245,88.460598197961659,88.382399460210323,88.304395244467869,88.226598089891681,88.149021591324654,88.071680507254385,87.994590880475286,87.917770173085685,87.841237417663947,87.765013386704695,87.689120782655692,87.61358445118023,87.538431620572624,87.463692170573466,87.389398934153846,87.315588036149222,87.242299272899572,87.169576537254272,87.097468293376508,87.026028105654461,86.955315225589302,86.885395239636267,86.816340779425786,86.748232293327078,86.681158874598964,86.615219135982869,86.550522113031619,86.487188168171059,86.425349853896734,86.365152676152391,86.30675567765951,86.250331736208196,86.196067446148405,86.144162425578514,86.094827872182677,86.048284184981185,86.004757487384296,85.964474939866051,85.927658827484393,85.894519551241359,85.865247834041597,85.840006646901827,85.818923528288522,85.802084059632278,85.78952723019033,85.781243256197328,85.777174132204848,85.77721684363739,85.781228836712017,85.789035097330725,85.800436077519421,85.815215730025756,85.833149038552961,85.854008615085846,85.877570129494416,85.90361650521541,85.931940940151222,85.962348890454265,85.99465919260588,86.028704506510763,86.06433125002566,86.101399172545371,86.139780688626658,86.179360066399425,86.220032542038069,86.261703411844124,86.304287137679069,86.347706489273349,86.391891737802609,86.436779908492568,86.482314095348286,86.528442837931109,82.088496650365428],"text":["netflix_hours: 0.00000000<br />attendance_percentage: 84.30847","netflix_hours: 0.06708861<br />attendance_percentage: 84.32188","netflix_hours: 0.13417722<br />attendance_percentage: 84.33530","netflix_hours: 0.20126582<br />attendance_percentage: 84.34871","netflix_hours: 0.26835443<br />attendance_percentage: 84.36212","netflix_hours: 0.33544304<br />attendance_percentage: 84.37553","netflix_hours: 0.40253165<br />attendance_percentage: 84.38895","netflix_hours: 0.46962025<br />attendance_percentage: 84.40236","netflix_hours: 0.53670886<br />attendance_percentage: 84.41577","netflix_hours: 0.60379747<br />attendance_percentage: 84.42918","netflix_hours: 0.67088608<br />attendance_percentage: 84.44260","netflix_hours: 0.73797468<br />attendance_percentage: 84.45601","netflix_hours: 0.80506329<br />attendance_percentage: 84.46942","netflix_hours: 0.87215190<br />attendance_percentage: 84.48284","netflix_hours: 0.93924051<br />attendance_percentage: 84.49625","netflix_hours: 1.00632911<br />attendance_percentage: 84.50966","netflix_hours: 1.07341772<br />attendance_percentage: 84.52307","netflix_hours: 1.14050633<br />attendance_percentage: 84.53649","netflix_hours: 1.20759494<br />attendance_percentage: 84.54990","netflix_hours: 1.27468354<br />attendance_percentage: 84.56331","netflix_hours: 1.34177215<br />attendance_percentage: 84.57673","netflix_hours: 1.40886076<br />attendance_percentage: 84.59014","netflix_hours: 1.47594937<br />attendance_percentage: 84.60355","netflix_hours: 1.54303797<br />attendance_percentage: 84.61696","netflix_hours: 1.61012658<br />attendance_percentage: 84.63038","netflix_hours: 1.67721519<br />attendance_percentage: 84.64379","netflix_hours: 1.74430380<br />attendance_percentage: 84.65720","netflix_hours: 1.81139241<br />attendance_percentage: 84.67062","netflix_hours: 1.87848101<br />attendance_percentage: 84.68403","netflix_hours: 1.94556962<br />attendance_percentage: 84.69744","netflix_hours: 2.01265823<br />attendance_percentage: 84.71085","netflix_hours: 2.07974684<br />attendance_percentage: 84.72427","netflix_hours: 2.14683544<br />attendance_percentage: 84.73768","netflix_hours: 2.21392405<br />attendance_percentage: 84.75109","netflix_hours: 2.28101266<br />attendance_percentage: 84.76450","netflix_hours: 2.34810127<br />attendance_percentage: 84.77792","netflix_hours: 2.41518987<br />attendance_percentage: 84.79133","netflix_hours: 2.48227848<br />attendance_percentage: 84.80474","netflix_hours: 2.54936709<br />attendance_percentage: 84.81816","netflix_hours: 2.61645570<br />attendance_percentage: 84.83157","netflix_hours: 2.68354430<br />attendance_percentage: 84.84498","netflix_hours: 2.75063291<br />attendance_percentage: 84.85839","netflix_hours: 2.81772152<br />attendance_percentage: 84.87181","netflix_hours: 2.88481013<br />attendance_percentage: 84.88522","netflix_hours: 2.95189873<br />attendance_percentage: 84.89863","netflix_hours: 3.01898734<br />attendance_percentage: 84.91205","netflix_hours: 3.08607595<br />attendance_percentage: 84.92546","netflix_hours: 3.15316456<br />attendance_percentage: 84.93887","netflix_hours: 3.22025316<br />attendance_percentage: 84.95228","netflix_hours: 3.28734177<br />attendance_percentage: 84.96570","netflix_hours: 3.35443038<br />attendance_percentage: 84.97911","netflix_hours: 3.42151899<br />attendance_percentage: 84.99252","netflix_hours: 3.48860759<br />attendance_percentage: 85.00594","netflix_hours: 3.55569620<br />attendance_percentage: 85.01935","netflix_hours: 3.62278481<br />attendance_percentage: 85.03276","netflix_hours: 3.68987342<br />attendance_percentage: 85.04617","netflix_hours: 3.75696203<br />attendance_percentage: 85.05959","netflix_hours: 3.82405063<br />attendance_percentage: 85.07300","netflix_hours: 3.89113924<br />attendance_percentage: 85.08641","netflix_hours: 3.95822785<br />attendance_percentage: 85.09982","netflix_hours: 4.02531646<br />attendance_percentage: 85.11324","netflix_hours: 4.09240506<br />attendance_percentage: 85.12665","netflix_hours: 4.15949367<br />attendance_percentage: 85.14006","netflix_hours: 4.22658228<br />attendance_percentage: 85.15348","netflix_hours: 4.29367089<br />attendance_percentage: 85.16689","netflix_hours: 4.36075949<br />attendance_percentage: 85.18030","netflix_hours: 4.42784810<br />attendance_percentage: 85.19371","netflix_hours: 4.49493671<br />attendance_percentage: 85.20713","netflix_hours: 4.56202532<br />attendance_percentage: 85.22054","netflix_hours: 4.62911392<br />attendance_percentage: 85.23395","netflix_hours: 4.69620253<br />attendance_percentage: 85.24737","netflix_hours: 4.76329114<br />attendance_percentage: 85.26078","netflix_hours: 4.83037975<br />attendance_percentage: 85.27419","netflix_hours: 4.89746835<br />attendance_percentage: 85.28760","netflix_hours: 4.96455696<br />attendance_percentage: 85.30102","netflix_hours: 5.03164557<br />attendance_percentage: 85.31443","netflix_hours: 5.09873418<br />attendance_percentage: 85.32784","netflix_hours: 5.16582278<br />attendance_percentage: 85.34126","netflix_hours: 5.23291139<br />attendance_percentage: 85.35467","netflix_hours: 5.30000000<br />attendance_percentage: 85.36808","netflix_hours: 5.30000000<br />attendance_percentage: 85.36808","netflix_hours: 5.30000000<br />attendance_percentage: 85.36808","netflix_hours: 5.23291139<br />attendance_percentage: 85.35467","netflix_hours: 5.16582278<br />attendance_percentage: 85.34126","netflix_hours: 5.09873418<br />attendance_percentage: 85.32784","netflix_hours: 5.03164557<br />attendance_percentage: 85.31443","netflix_hours: 4.96455696<br />attendance_percentage: 85.30102","netflix_hours: 4.89746835<br />attendance_percentage: 85.28760","netflix_hours: 4.83037975<br />attendance_percentage: 85.27419","netflix_hours: 4.76329114<br />attendance_percentage: 85.26078","netflix_hours: 4.69620253<br />attendance_percentage: 85.24737","netflix_hours: 4.62911392<br />attendance_percentage: 85.23395","netflix_hours: 4.56202532<br />attendance_percentage: 85.22054","netflix_hours: 4.49493671<br />attendance_percentage: 85.20713","netflix_hours: 4.42784810<br />attendance_percentage: 85.19371","netflix_hours: 4.36075949<br />attendance_percentage: 85.18030","netflix_hours: 4.29367089<br />attendance_percentage: 85.16689","netflix_hours: 4.22658228<br />attendance_percentage: 85.15348","netflix_hours: 4.15949367<br />attendance_percentage: 85.14006","netflix_hours: 4.09240506<br />attendance_percentage: 85.12665","netflix_hours: 4.02531646<br />attendance_percentage: 85.11324","netflix_hours: 3.95822785<br />attendance_percentage: 85.09982","netflix_hours: 3.89113924<br />attendance_percentage: 85.08641","netflix_hours: 3.82405063<br />attendance_percentage: 85.07300","netflix_hours: 3.75696203<br />attendance_percentage: 85.05959","netflix_hours: 3.68987342<br />attendance_percentage: 85.04617","netflix_hours: 3.62278481<br />attendance_percentage: 85.03276","netflix_hours: 3.55569620<br />attendance_percentage: 85.01935","netflix_hours: 3.48860759<br />attendance_percentage: 85.00594","netflix_hours: 3.42151899<br />attendance_percentage: 84.99252","netflix_hours: 3.35443038<br />attendance_percentage: 84.97911","netflix_hours: 3.28734177<br />attendance_percentage: 84.96570","netflix_hours: 3.22025316<br />attendance_percentage: 84.95228","netflix_hours: 3.15316456<br />attendance_percentage: 84.93887","netflix_hours: 3.08607595<br />attendance_percentage: 84.92546","netflix_hours: 3.01898734<br />attendance_percentage: 84.91205","netflix_hours: 2.95189873<br />attendance_percentage: 84.89863","netflix_hours: 2.88481013<br />attendance_percentage: 84.88522","netflix_hours: 2.81772152<br />attendance_percentage: 84.87181","netflix_hours: 2.75063291<br />attendance_percentage: 84.85839","netflix_hours: 2.68354430<br />attendance_percentage: 84.84498","netflix_hours: 2.61645570<br />attendance_percentage: 84.83157","netflix_hours: 2.54936709<br />attendance_percentage: 84.81816","netflix_hours: 2.48227848<br />attendance_percentage: 84.80474","netflix_hours: 2.41518987<br />attendance_percentage: 84.79133","netflix_hours: 2.34810127<br />attendance_percentage: 84.77792","netflix_hours: 2.28101266<br />attendance_percentage: 84.76450","netflix_hours: 2.21392405<br />attendance_percentage: 84.75109","netflix_hours: 2.14683544<br />attendance_percentage: 84.73768","netflix_hours: 2.07974684<br />attendance_percentage: 84.72427","netflix_hours: 2.01265823<br />attendance_percentage: 84.71085","netflix_hours: 1.94556962<br />attendance_percentage: 84.69744","netflix_hours: 1.87848101<br />attendance_percentage: 84.68403","netflix_hours: 1.81139241<br />attendance_percentage: 84.67062","netflix_hours: 1.74430380<br />attendance_percentage: 84.65720","netflix_hours: 1.67721519<br />attendance_percentage: 84.64379","netflix_hours: 1.61012658<br />attendance_percentage: 84.63038","netflix_hours: 1.54303797<br />attendance_percentage: 84.61696","netflix_hours: 1.47594937<br />attendance_percentage: 84.60355","netflix_hours: 1.40886076<br />attendance_percentage: 84.59014","netflix_hours: 1.34177215<br />attendance_percentage: 84.57673","netflix_hours: 1.27468354<br />attendance_percentage: 84.56331","netflix_hours: 1.20759494<br />attendance_percentage: 84.54990","netflix_hours: 1.14050633<br />attendance_percentage: 84.53649","netflix_hours: 1.07341772<br />attendance_percentage: 84.52307","netflix_hours: 1.00632911<br />attendance_percentage: 84.50966","netflix_hours: 0.93924051<br />attendance_percentage: 84.49625","netflix_hours: 0.87215190<br />attendance_percentage: 84.48284","netflix_hours: 0.80506329<br />attendance_percentage: 84.46942","netflix_hours: 0.73797468<br />attendance_percentage: 84.45601","netflix_hours: 0.67088608<br />attendance_percentage: 84.44260","netflix_hours: 0.60379747<br />attendance_percentage: 84.42918","netflix_hours: 0.53670886<br />attendance_percentage: 84.41577","netflix_hours: 0.46962025<br />attendance_percentage: 84.40236","netflix_hours: 0.40253165<br />attendance_percentage: 84.38895","netflix_hours: 0.33544304<br />attendance_percentage: 84.37553","netflix_hours: 0.26835443<br />attendance_percentage: 84.36212","netflix_hours: 0.20126582<br />attendance_percentage: 84.34871","netflix_hours: 0.13417722<br />attendance_percentage: 84.33530","netflix_hours: 0.06708861<br />attendance_percentage: 84.32188","netflix_hours: 0.00000000<br />attendance_percentage: 84.30847","netflix_hours: 0.00000000<br />attendance_percentage: 84.30847"],"type":"scatter","mode":"lines","line":{"width":3.7795275590551185,"color":"rgba(139,0,0,0.4)","dash":"solid"},"fill":"toself","fillcolor":"rgba(153,153,153,0.4)","hoveron":"points","hoverinfo":"x+y","showlegend":false,"xaxis":"x","yaxis":"y","frame":null}],"layout":{"margin":{"t":45.406392694063925,"r":7.3059360730593621,"b":41.82648401826485,"l":43.105022831050235},"font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724},"title":{"text":"Scatter Plot: Netflix Hours vs Attendance","font":{"color":"rgba(0,0,0,1)","family":"","size":17.534246575342465},"x":0,"xref":"paper"},"xaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[-0.26500000000000001,5.5649999999999995],"tickmode":"array","ticktext":["0","2","4"],"tickvals":[0,2,3.9999999999999996],"categoryorder":"array","categoryarray":["0","2","4"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"y","title":{"text":"Netflix Hours","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"yaxis":{"domain":[0,1],"automargin":true,"type":"linear","autorange":false,"range":[53.799999999999997,102.2],"tickmode":"array","ticktext":["60","70","80","90","100"],"tickvals":[60,70,80,90,100],"categoryorder":"array","categoryarray":["60","70","80","90","100"],"nticks":null,"ticks":"","tickcolor":null,"ticklen":3.6529680365296811,"tickwidth":0,"showticklabels":true,"tickfont":{"color":"rgba(77,77,77,1)","family":"","size":11.68949771689498},"tickangle":-0,"showline":false,"linecolor":null,"linewidth":0,"showgrid":true,"gridcolor":"rgba(235,235,235,1)","gridwidth":0.66417600664176002,"zeroline":false,"anchor":"x","title":{"text":"Attendance (%)","font":{"color":"rgba(0,0,0,1)","family":"","size":14.611872146118724}},"hoverformat":".2f"},"shapes":[{"type":"rect","fillcolor":null,"line":{"color":null,"width":0,"linetype":[]},"yref":"paper","xref":"paper","x0":0,"x1":1,"y0":0,"y1":1}],"showlegend":false,"legend":{"bgcolor":null,"bordercolor":null,"borderwidth":0,"font":{"color":"rgba(0,0,0,1)","family":"","size":11.68949771689498}},"hovermode":"closest","barmode":"relative"},"config":{"doubleClick":"reset","modeBarButtonsToAdd":["hoverclosest","hovercompare"],"showSendToCloud":false},"source":"A","attrs":{"84dd2f902cf2":{"x":{},"y":{},"type":"scatter"},"84dd2276dc43":{"x":{},"y":{}}},"cur_data":"84dd2f902cf2","visdat":{"84dd2f902cf2":["function (y) ","x"],"84dd2276dc43":["function (y) ","x"]},"highlight":{"on":"plotly_click","persistent":false,"dynamic":false,"selectize":false,"opacityDim":0.20000000000000001,"selected":{"opacity":1},"debounce":0},"shinyEvents":["plotly_hover","plotly_click","plotly_selected","plotly_relayout","plotly_brushed","plotly_brushing","plotly_clickannotation","plotly_doubleclick","plotly_deselect","plotly_afterplot","plotly_sunburstclick"],"base_url":"https://plot.ly"},"evals":[],"jsHooks":[]}</script>
+</div>
+<p>In this scatter plot, we can see that although the attendance level is varied across the y-axis, as the number of hours spent on Netflix increase, the number of students decrease. Which mean that Netflix can affect attendance.</p>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="habits_files/figure-html5/unnamed-chunk-12-1.png" width="624" /></p>
+</div>
+<p>By observing the width of the bins above in the mosaic graph, with <code>worst</code> and <code>bad</code> mental health we see some low attendance. This emphasizes my assumptions at the beginning. It is worth noting that sometimes students choose not to report their mental health status at the extremities which might be why we have a higher number in the middle.</p>
+<h3 id="mental-health">Mental Health</h3>
+<p>Mental health is also a big thing in our daily lives. Students can’t do well in school when they are unwell mentally. I believe that exercise rate can impact the mental well being of students.</p>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="habits_files/figure-html5/unnamed-chunk-13-1.png" width="624" /></p>
+</div>
+<p>From the above box plot, we can identify an upward trend. The median of the right most boxplot is higher than those of the two before it. This is a good indication that the better the mental health, the more likely students are to get good scores in exams.</p>
+<h3 id="studying-hours">Studying Hours</h3>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="habits_files/figure-html5/unnamed-chunk-14-1.png" width="624" /></p>
+</div>
+<div class="layout-chunk" data-layout="l-body">
+<p><img src="habits_files/figure-html5/unnamed-chunk-15-1.png" width="624" /></p>
+</div>
+<div class="sourceCode" id="cb1"><pre class="sourceCode r distill-force-highlighting-css"><code class="sourceCode r"></code></pre></div>
+<!--radix_placeholder_article_footer-->
+<!--/radix_placeholder_article_footer-->
+</div>
+
+<div class="d-appendix">
+</div>
+
+
+<!--radix_placeholder_site_after_body-->
+<!--/radix_placeholder_site_after_body-->
+<!--radix_placeholder_appendices-->
+<div class="appendix-bottom"></div>
+<!--/radix_placeholder_appendices-->
+<!--radix_placeholder_navigation_after_body-->
+<!--/radix_placeholder_navigation_after_body-->
+
+</body>
+
+</html>

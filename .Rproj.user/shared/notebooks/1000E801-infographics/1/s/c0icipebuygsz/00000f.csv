@@ -1,0 +1,5 @@
+"0","ggplot(std.habits, aes(x = internet_quality, y = exam_score, fill = internet_quality)) +"
+"0","  geom_boxplot() +"
+"0","  labs(title = ""Exam Scores by Internet Quality"", x = ""Internet Quality"", y = ""Exam Score"") +"
+"0","  theme_minimal()"
+"0",""

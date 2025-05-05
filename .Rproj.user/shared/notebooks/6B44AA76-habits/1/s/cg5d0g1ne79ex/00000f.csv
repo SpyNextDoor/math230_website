@@ -1,0 +1,7 @@
+"0","ggplot(sample.std, aes(x = study_hours_per_day, y = exam_score)) +"
+"0","  geom_bin2d(bins = 30) +"
+"0","  scale_fill_gradient(low = rasta.palette[c(6)], high = rasta.palette[c(7)]) +"
+"0","  labs(title = ""Heat Map of Exam Scores vs. Study Hours"","
+"0","       x = ""Study Hours"","
+"0","       y = ""Exam Score"") +"
+"0","  theme_minimal()"

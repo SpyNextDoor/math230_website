@@ -1,0 +1,2 @@
+"0","ggplot(std.habits, aes(x = age, y = social_media_hours)) +"
+"0","  geom_bar(stat = ""identity"")"

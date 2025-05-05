@@ -1,0 +1,5 @@
+"0","ggplot(std.habits, aes(x = internet_quality, y = mental_health_rating, fill = internet_quality)) +"
+"0","  geom_boxplot() +"
+"0","  labs(title = ""Mental Health by Internet Quality"", x = ""Internet Quality"", y = ""Mental Health Rating"") +"
+"0","  theme_minimal()"
+"0",""

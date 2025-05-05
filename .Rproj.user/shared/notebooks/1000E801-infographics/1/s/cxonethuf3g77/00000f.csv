@@ -1,0 +1,5 @@
+"0","ggplot(std.habits, aes(x = gender, fill = gender)) +"
+"0","  geom_bar() +"
+"0","  labs(title = ""Student Gender Distribution"", x = ""Gender"", y = ""Count"") +"
+"0","  theme_minimal()"
+"0",""

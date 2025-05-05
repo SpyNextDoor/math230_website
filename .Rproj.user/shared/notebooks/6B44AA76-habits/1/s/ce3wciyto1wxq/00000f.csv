@@ -1,0 +1,7 @@
+"0","# FULL DATASET"
+"0","std.habits$attendance_cat <- cut("
+"0","  std.habits$attendance_percentage,"
+"0","  breaks = c(-Inf, 75, 90, 100),"
+"0","  labels = c(""Low"", ""Medium"", ""High""),"
+"0","  right = TRUE"
+"0",")"

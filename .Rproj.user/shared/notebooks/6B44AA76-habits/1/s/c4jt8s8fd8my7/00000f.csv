@@ -1,0 +1,8 @@
+"0","# SAMPLE "
+"0","sample.std$attendance_cat <- cut("
+"0","  sample.std$attendance_percentage,"
+"0","  breaks = c(-Inf, 60, 80, 100),"
+"0","  labels = c(""Low"", ""Medium"", ""High""),"
+"0","  right = TRUE"
+"0",")"
+"0",""

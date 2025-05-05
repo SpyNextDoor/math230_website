@@ -1,0 +1,6 @@
+"0","ggplot(std.habits, aes(x = parental_education_level, y = exam_score, fill = parental_education_level)) +"
+"0","  geom_boxplot() +"
+"0","  labs(title = ""Exam Scores by Parental Education Level"", x = ""Parental Education"", y = ""Exam Score"") +"
+"0","  theme_minimal() +"
+"0","  theme(axis.text.x = element_text(angle = 45, hjust = 1))"
+"0",""

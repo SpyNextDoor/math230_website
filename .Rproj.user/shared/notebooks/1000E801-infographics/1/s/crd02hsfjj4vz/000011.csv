@@ -1,0 +1,6 @@
+"0","ggplot(std.habits, aes(x = social_media_hours, y = exam_score)) +"
+"0","  geom_point(alpha = 0.5) +"
+"0","  geom_smooth(method = ""lm"", color = ""steelblue"") +"
+"0","  labs(title = ""Device Hours vs Exam Score"", x = ""Device Use"", y = ""Exam Score"") +"
+"0","  theme_minimal()"
+"0",""

@@ -1,0 +1,5 @@
+"0","ggplot(std.habits, aes(sleep_hours, exam_score, color = factor(age))) +"
+"0","  geom_jitter() + "
+"0","  geom_smooth(colour = ""grey50"", size = 2)"
+"2","Warning: Using `size` aesthetic for lines was deprecated in ggplot2 3.4.0.
+Please use `linewidth` instead."

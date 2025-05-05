@@ -1,0 +1,2 @@
+"0","std.habits = std.habits[complete.cases(std.habits), ] # clean up the data"
+"0","attach(std.habits)"

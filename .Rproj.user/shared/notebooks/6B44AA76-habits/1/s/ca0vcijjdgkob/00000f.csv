@@ -1,0 +1,7 @@
+"0","ggplot(sample.std, aes(x = study_hours_per_day, y = exam_score)) +"
+"0","  geom_density_2d_filled() +"
+"0","  labs(title = ""2D Density Heat Map: Study Hours vs. Exam Score"","
+"0","       x = ""Study Hours"","
+"0","       y = ""Exam Score"") +"
+"0","  theme_minimal()"
+"0",""

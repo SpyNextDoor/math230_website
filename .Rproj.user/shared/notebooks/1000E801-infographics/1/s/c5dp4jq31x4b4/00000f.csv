@@ -1,0 +1,5 @@
+"0","ggplot(std.habits, aes(x = sleep_hours, fill = gender)) +"
+"0","  geom_density(alpha = 0.4) +"
+"0","  labs(title = ""Sleep Hour Distributions by Gender"", x = ""Sleep Hours"", y = ""Density"") +"
+"0","  theme_minimal()"
+"0",""
