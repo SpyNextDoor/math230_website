@@ -26,3 +26,5 @@ knitr::opts_chunk$set(echo = FALSE)
      My name is Jean Marie Ngabonziza. I am a rising senior, majoring in Computer Science and Engineering. I took the Data Visualization class as part of my Data Science path that I am forging. I aspire to work as a data scientist upon graduation. 
   </p>
 </div>
+
+![](data exhibition.png) 
