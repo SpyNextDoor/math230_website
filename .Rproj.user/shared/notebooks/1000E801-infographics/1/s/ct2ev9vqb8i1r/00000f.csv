@@ -1,2 +1,9 @@
 "0","std.habits = std.habits[complete.cases(std.habits), ] # clean up the data"
 "0","attach(std.habits)"
+"2","The following objects are masked from sample.std:
+
+    age, attendance_cat, attendance_percentage, diet_quality, exam_cat, exam_score, exercise_frequency, extracurricular_participation, gender,
+    internet_quality, mental_health_rating, netflix_hours, parental_education_level, part_time_job, sleep_hours, social_media_hours, student_id,
+    study_hours_per_day
+
+"
