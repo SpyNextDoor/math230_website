@@ -17,7 +17,7 @@ knitr::opts_chunk$set(echo = FALSE)
 ```
 
 <div class="flex-row">
-  <img src="Juma.png" alt="Juma" width="200" height="auto">
+  <img src="aboutImage.jpg" alt="Juma" width="200" height="auto">
 </div>
 
 <div>

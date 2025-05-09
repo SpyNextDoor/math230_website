@@ -3,13 +3,3 @@
 "0",""
 "0","sample.std <- std.habits[sample.ids, ]"
 "0","attach(sample.std)"
-"2","The following objects are masked from sample.std (pos = 3):
-
-    age, attendance_cat, attendance_percentage, diet_quality,
-    exam_cat, exam_score, exercise_frequency,
-    extracurricular_participation, gender, internet_quality,
-    mental_health_rating, netflix_hours, parental_education_level,
-    part_time_job, sleep_hours, social_media_hours, student_id,
-    study_hours_per_day
-
-"

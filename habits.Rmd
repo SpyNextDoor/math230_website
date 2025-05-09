@@ -99,6 +99,19 @@ ggplot(std.habits, aes(x = mental_health_rating)) +
   theme_minimal()
 ```
 
+```{r, echo=FALSE}
+# bin exam scores population
+std.habits <- std.habits %>%
+  mutate(
+    exam_cat = case_when(
+      exam_score < 50 ~ "Fail",
+      exam_score < 75 ~ "Pass",
+      TRUE ~ "Excellent"
+    ),
+    exam_cat = factor(exam_cat, levels = c("Fail", "Pass", "Excellent"))
+  )
+```
+
 
 ```{r, echo=FALSE}
 # bin exam scores
@@ -184,14 +197,37 @@ ggplot(sample.std, aes(x = study_hours_per_day, y = exam_score)) +
        y = "Exam Score") +
   theme_minimal()
 ```
+
+From the heat map, we can see a positive correlation between study hours and exam score. Students who put in more hours to study get better grades. This can be used to emphasize the importance of revision after class. Lecture alone is not enough to succeed. 
+
+
+### Exercising
+
+Last but not least, I believe that exercising not only keep our bodies healthy, but also help us feel relaxed and reset for better studying conditions. In the following barchart, I will be trying to see the performance of students based on their exercising and mental health rating. 
+
 ```{r, echo=FALSE}
-ggplot(sample.std, aes(x = study_hours_per_day, y = exam_score)) +
-  geom_density_2d_filled() +
-  labs(title = "2D Density Heat Map: Study Hours vs. Exam Score",
-       x = "Study Hours",
-       y = "Exam Score") +
+even_colors <- rasta.palette[seq(2, length(rasta.palette), by = 2)]  # Picks 2nd, 4th, 6th, 8th
+
+ggplot(sample.std, aes(x = exercise_frequency, y = mental_health_rating, fill = exam_cat)) +
+  stat_summary(fun = mean, geom = "bar", position = "dodge") +
+  scale_fill_manual(values = even_colors) +
+  labs(
+    x = "Exercise Frequency", 
+    y = "Mental Health Rating", 
+    fill = "Score Category", 
+    title = "Mental Health Rating vs Exercise Frequency"
+  ) +
   theme_minimal()
 
 ```
+
+The above bar chart does tell much. My hypothesis was that students who exercise more tend to have a better mental health and a high academic performance. In my data, we see a spike for students who exercise three times a week. This might also be due to the false reports on mental health as mentioned above. 
+
+### Conclusion
+
+In this investigation, I was interested in identifying habits that might affect student's performance. What I found to be true was that the amount of hours that students dedicate to studies can significantly improve their grade. Moreover, students who spend much time on Netflix and those with an unstable mental health, do not perform well in class. 
+
+It is important for every student to access themselves and see if these findings apply to them, to make informed decisions for the future.
+
 
 
